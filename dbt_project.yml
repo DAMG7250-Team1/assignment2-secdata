@@ -20,7 +20,7 @@ models:
   financial_dbt_project:
     staging:
       +materialized: view
-      +schema: FACT_TABLE_STAGING
+      +schema: DENORMALIZE_FACT_STAGING
     marts:
       +materialized: table
-      +schema: FACT_TABLE_STAGING
+      +schema: DENORMALIZE_FACT_STAGING

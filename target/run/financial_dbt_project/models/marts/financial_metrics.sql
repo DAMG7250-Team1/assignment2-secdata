@@ -2,13 +2,13 @@
   
     
 
-        create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics
+        create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics
          as
         (
 
 WITH balance_sheet AS (
     SELECT *
-    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
 ),
 
 metrics AS (

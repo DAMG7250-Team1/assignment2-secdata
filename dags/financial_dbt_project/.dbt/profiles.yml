@@ -1,0 +1,13 @@
+sec_data_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: BLOYCYG-BPB84346
+      user: yshusain
+      password: 'Bigdata@2468'
+      role: dbt_role
+      database: sec_data
+      warehouse: dbt_wh
+      schema: raw_staging  # Default schema for staging models
+      threads: 4

@@ -509,3 +509,1803 @@ FROM metrics
 [0m23:49:59.949670 [debug] [MainThread]: Command `dbt run` succeeded at 23:49:59.949586 after 7.81 seconds
 [0m23:49:59.949975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1007aef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1007dbdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1007dbd50>]}
 [0m23:49:59.950231 [debug] [MainThread]: Flushing usage events
+[0m16:21:34.572315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB30CF860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB2242BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB30CCBC0>]}
+
+
+============================== 16:21:34.577630 | 5d4c59f5-1a15-402a-aae3-9021645729e1 ==============================
+[0m16:21:34.577630 [info ] [MainThread]: Running with dbt=1.9.2
+[0m16:21:34.577630 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Dhrumil Patel\\.dbt', 'log_path': 'C:\\Users\\Dhrumil Patel\\Downloads\\Sec-Financial-Data-Pipeline (2)\\Sec-Financial-Data-Pipeline\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --vars {year: 2023, quarter: 4}', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:21:48.297389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BC37DC1A0>]}
+[0m16:21:48.392238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BC3B7ED20>]}
+[0m16:21:48.398159 [info ] [MainThread]: Registered adapter: snowflake=1.9.1
+[0m16:21:48.958763 [debug] [MainThread]: checksum: c5b7abb6ee808f5223d184d6e66f3649e9350ec2336a59f7ba36e96eac25af11, vars: {'quarter': 4, 'year': 2023}, profile: , target: , version: 1.9.2
+[0m16:21:49.067610 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m16:21:49.067610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB30F36E0>]}
+[0m16:21:51.993736 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_income_statement' in the 'models' section of file 'models\staging\schema.yml'
+[0m16:21:52.004820 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_cashflow' in the 'models' section of file 'models\staging\schema.yml'
+[0m16:21:52.286261 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_income_statement_adsh.f348e3d241' (models\staging\schema.yml) depends on a node named 'fact_income_statement' in package '' which was not found
+[0m16:21:52.286261 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_income_statement_value.261e217066' (models\staging\schema.yml) depends on a node named 'fact_income_statement' in package '' which was not found
+[0m16:21:52.298750 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_cashflow_adsh.2f84054910' (models\staging\schema.yml) depends on a node named 'fact_cashflow' in package '' which was not found
+[0m16:21:52.300410 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_cashflow_value.1c7c7f7378' (models\staging\schema.yml) depends on a node named 'fact_cashflow' in package '' which was not found
+[0m16:21:52.409169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BC56E2600>]}
+[0m16:21:52.487672 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m16:21:52.505964 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m16:21:52.551574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BC54F2840>]}
+[0m16:21:52.551574 [info ] [MainThread]: Found 4 models, 4 data tests, 7 sources, 472 macros
+[0m16:21:52.560341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BC569B860>]}
+[0m16:21:52.562317 [info ] [MainThread]: 
+[0m16:21:52.562317 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m16:21:52.562317 [info ] [MainThread]: 
+[0m16:21:52.564583 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:21:52.571828 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1'
+[0m16:21:55.982215 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1"
+[0m16:21:55.983222 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1"} */
+show terse schemas in database ASSIGNMENT2_TEAM1
+    limit 10000
+[0m16:21:55.984222 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:21:58.157443 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 2.180 seconds
+[0m16:21:58.172478 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING'
+[0m16:21:58.206028 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING"
+[0m16:21:58.206028 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING"} */
+show objects in ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING limit 10000;
+[0m16:21:58.206028 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:21:59.022108 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.807 seconds
+[0m16:21:59.036463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB0A63200>]}
+[0m16:21:59.054223 [debug] [Thread-1 (]: Began running node model.financial_dbt_project.stg_num
+[0m16:21:59.054223 [debug] [Thread-2 (]: Began running node model.financial_dbt_project.stg_pre
+[0m16:21:59.059917 [info ] [Thread-1 (]: 1 of 4 START sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num ...... [RUN]
+[0m16:21:59.061102 [info ] [Thread-2 (]: 2 of 4 START sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre ...... [RUN]
+[0m16:21:59.063941 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_num'
+[0m16:21:59.064449 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_pre'
+[0m16:21:59.064449 [debug] [Thread-1 (]: Began compiling node model.financial_dbt_project.stg_num
+[0m16:21:59.067338 [debug] [Thread-2 (]: Began compiling node model.financial_dbt_project.stg_pre
+[0m16:21:59.088434 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_dbt_project.stg_num"
+[0m16:21:59.093544 [debug] [Thread-2 (]: Writing injected SQL for node "model.financial_dbt_project.stg_pre"
+[0m16:21:59.094840 [debug] [Thread-1 (]: Began executing node model.financial_dbt_project.stg_num
+[0m16:21:59.095851 [debug] [Thread-2 (]: Began executing node model.financial_dbt_project.stg_pre
+[0m16:21:59.128761 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_dbt_project.stg_num"
+[0m16:21:59.128761 [debug] [Thread-2 (]: Writing runtime sql for node "model.financial_dbt_project.stg_pre"
+[0m16:21:59.137769 [debug] [Thread-1 (]: Using snowflake connection "model.financial_dbt_project.stg_num"
+[0m16:21:59.139628 [debug] [Thread-2 (]: Using snowflake connection "model.financial_dbt_project.stg_pre"
+[0m16:21:59.140696 [debug] [Thread-1 (]: On model.financial_dbt_project.stg_num: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_num"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num
+  
+   as (
+    
+
+SELECT
+    adsh,
+    tag,
+    version,
+    ddate,
+    qtrs,
+    uom,
+    segments,
+    coreg,
+    COALESCE(value, -1) AS value,
+    COALESCE(footnote, 'nan') AS footnote
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.NUM
+  );
+[0m16:21:59.141202 [debug] [Thread-2 (]: On model.financial_dbt_project.stg_pre: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_pre"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre
+  
+   as (
+    
+
+SELECT 
+    adsh,
+    report,
+    line,
+    stmt,
+    tag,
+    version,
+    plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.PRE
+  );
+[0m16:21:59.142266 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:21:59.142266 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:21:59.989249 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.847 seconds
+[0m16:22:00.012026 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB2A449E0>]}
+[0m16:22:00.012026 [info ] [Thread-2 (]: 2 of 4 OK created sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre . [[32mSUCCESS 1[0m in 0.95s]
+[0m16:22:00.012026 [debug] [Thread-2 (]: Finished running node model.financial_dbt_project.stg_pre
+[0m16:22:00.177396 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.043 seconds
+[0m16:22:00.186191 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BC60F34D0>]}
+[0m16:22:00.189198 [info ] [Thread-1 (]: 1 of 4 OK created sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num . [[32mSUCCESS 1[0m in 1.13s]
+[0m16:22:00.189198 [debug] [Thread-1 (]: Finished running node model.financial_dbt_project.stg_num
+[0m16:22:00.191086 [debug] [Thread-4 (]: Began running node model.financial_dbt_project.fact_balance_sheet
+[0m16:22:00.191086 [info ] [Thread-4 (]: 3 of 4 START sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet  [RUN]
+[0m16:22:00.193176 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.financial_dbt_project.fact_balance_sheet'
+[0m16:22:00.193682 [debug] [Thread-4 (]: Began compiling node model.financial_dbt_project.fact_balance_sheet
+[0m16:22:00.196205 [debug] [Thread-4 (]: Writing injected SQL for node "model.financial_dbt_project.fact_balance_sheet"
+[0m16:22:00.196205 [debug] [Thread-4 (]: Began executing node model.financial_dbt_project.fact_balance_sheet
+[0m16:22:00.225969 [debug] [Thread-4 (]: Writing runtime sql for node "model.financial_dbt_project.fact_balance_sheet"
+[0m16:22:00.228442 [debug] [Thread-4 (]: Using snowflake connection "model.financial_dbt_project.fact_balance_sheet"
+[0m16:22:00.229439 [debug] [Thread-4 (]: On model.financial_dbt_project.fact_balance_sheet: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.fact_balance_sheet"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet
+         as
+        (
+
+SELECT
+    n.adsh,
+    n.tag,
+    n.value,
+    p.stmt,
+    p.plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num n
+JOIN ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre p
+ON n.adsh = p.adsh AND n.tag = p.tag
+WHERE p.stmt = 'BS'
+        );
+[0m16:22:00.229439 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:22:05.650621 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 5.420 seconds
+[0m16:22:05.652632 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BC60F1280>]}
+[0m16:22:05.654184 [info ] [Thread-4 (]: 3 of 4 OK created sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet  [[32mSUCCESS 1[0m in 5.46s]
+[0m16:22:05.654184 [debug] [Thread-4 (]: Finished running node model.financial_dbt_project.fact_balance_sheet
+[0m16:22:05.654184 [debug] [Thread-6 (]: Began running node model.financial_dbt_project.financial_metrics
+[0m16:22:05.657041 [info ] [Thread-6 (]: 4 of 4 START sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics  [RUN]
+[0m16:22:05.657041 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.financial_dbt_project.financial_metrics'
+[0m16:22:05.657041 [debug] [Thread-6 (]: Began compiling node model.financial_dbt_project.financial_metrics
+[0m16:22:05.657041 [debug] [Thread-6 (]: Writing injected SQL for node "model.financial_dbt_project.financial_metrics"
+[0m16:22:05.657041 [debug] [Thread-6 (]: Began executing node model.financial_dbt_project.financial_metrics
+[0m16:22:05.657041 [debug] [Thread-6 (]: Writing runtime sql for node "model.financial_dbt_project.financial_metrics"
+[0m16:22:05.667548 [debug] [Thread-6 (]: Using snowflake connection "model.financial_dbt_project.financial_metrics"
+[0m16:22:05.669248 [debug] [Thread-6 (]: On model.financial_dbt_project.financial_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.financial_metrics"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics
+         as
+        (
+
+WITH balance_sheet AS (
+    SELECT *
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet
+),
+
+metrics AS (
+    SELECT 
+        adsh,
+        tag,
+        value,
+        stmt,
+        plabel,
+        SUM(value) OVER (PARTITION BY adsh) as total_value
+    FROM balance_sheet
+)
+
+SELECT 
+    adsh,
+    tag,
+    value,
+    stmt,
+    plabel,
+    total_value,
+    (value / NULLIF(total_value, 0)) * 100 as percentage_of_total
+FROM metrics
+        );
+[0m16:22:05.670233 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m16:22:09.457187 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 3.787 seconds
+[0m16:22:09.462712 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d4c59f5-1a15-402a-aae3-9021645729e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BC619E720>]}
+[0m16:22:09.463228 [info ] [Thread-6 (]: 4 of 4 OK created sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics  [[32mSUCCESS 1[0m in 3.80s]
+[0m16:22:09.466847 [debug] [Thread-6 (]: Finished running node model.financial_dbt_project.financial_metrics
+[0m16:22:09.470013 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:22:09.472325 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1' was left open.
+[0m16:22:09.472955 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1: Close
+[0m16:22:09.677765 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING' was left open.
+[0m16:22:09.677765 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING: Close
+[0m16:22:09.871636 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_num' was left open.
+[0m16:22:09.874082 [debug] [MainThread]: On model.financial_dbt_project.stg_num: Close
+[0m16:22:09.965552 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_pre' was left open.
+[0m16:22:09.965552 [debug] [MainThread]: On model.financial_dbt_project.stg_pre: Close
+[0m16:22:10.115507 [debug] [MainThread]: Connection 'model.financial_dbt_project.fact_balance_sheet' was left open.
+[0m16:22:10.124035 [debug] [MainThread]: On model.financial_dbt_project.fact_balance_sheet: Close
+[0m16:22:10.222494 [debug] [MainThread]: Connection 'model.financial_dbt_project.financial_metrics' was left open.
+[0m16:22:10.222494 [debug] [MainThread]: On model.financial_dbt_project.financial_metrics: Close
+[0m16:22:10.322853 [info ] [MainThread]: 
+[0m16:22:10.322853 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 17.76 seconds (17.76s).
+[0m16:22:10.334596 [debug] [MainThread]: Command end result
+[0m16:22:10.366162 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m16:22:10.373807 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m16:22:10.377543 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\run_results.json
+[0m16:22:10.377543 [info ] [MainThread]: 
+[0m16:22:10.377543 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:22:10.377543 [info ] [MainThread]: 
+[0m16:22:10.383711 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m16:22:10.385480 [debug] [MainThread]: Command `dbt run` succeeded at 16:22:10.385480 after 36.04 seconds
+[0m16:22:10.385480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB33C23C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB32FACF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB30CF860>]}
+[0m16:22:10.385480 [debug] [MainThread]: Flushing usage events
+[0m16:22:10.552089 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:48:50.860825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1E02DBE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1E342B4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1E3B35AC0>]}
+
+
+============================== 16:48:50.866069 | 6fe270e9-57ed-4d23-98c3-f8bdfe535e74 ==============================
+[0m16:48:50.866069 [info ] [MainThread]: Running with dbt=1.9.2
+[0m16:48:50.866069 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Dhrumil Patel\\Downloads\\Sec-Financial-Data-Pipeline (2)\\Sec-Financial-Data-Pipeline\\logs', 'profiles_dir': 'C:\\Users\\Dhrumil Patel\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --vars {year: 2023, quarter: 4}', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:48:52.329482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1E3B71BE0>]}
+[0m16:48:52.417392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F4754800>]}
+[0m16:48:52.424028 [info ] [MainThread]: Registered adapter: snowflake=1.9.1
+[0m16:48:52.841011 [debug] [MainThread]: checksum: c5b7abb6ee808f5223d184d6e66f3649e9350ec2336a59f7ba36e96eac25af11, vars: {'quarter': 4, 'year': 2023}, profile: , target: , version: 1.9.2
+[0m16:48:53.032969 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:48:53.032969 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:48:53.089380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F5C339E0>]}
+[0m16:48:53.174508 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m16:48:53.181983 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m16:48:53.211979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F5E721E0>]}
+[0m16:48:53.211979 [info ] [MainThread]: Found 4 models, 4 data tests, 7 sources, 472 macros
+[0m16:48:53.213090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F5C12A50>]}
+[0m16:48:53.214931 [info ] [MainThread]: 
+[0m16:48:53.214931 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m16:48:53.217219 [info ] [MainThread]: 
+[0m16:48:53.217728 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:48:53.223482 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1'
+[0m16:48:53.309438 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1"
+[0m16:48:53.310437 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1"} */
+show terse schemas in database ASSIGNMENT2_TEAM1
+    limit 10000
+[0m16:48:53.310437 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:48:54.619275 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.313 seconds
+[0m16:48:54.635864 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING'
+[0m16:48:54.660152 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING"
+[0m16:48:54.660152 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING"} */
+show objects in ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING limit 10000;
+[0m16:48:54.660152 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:48:55.246967 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.576 seconds
+[0m16:48:55.262083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F4AB9310>]}
+[0m16:48:55.279862 [debug] [Thread-1 (]: Began running node model.financial_dbt_project.stg_num
+[0m16:48:55.282867 [debug] [Thread-2 (]: Began running node model.financial_dbt_project.stg_pre
+[0m16:48:55.285852 [info ] [Thread-1 (]: 1 of 4 START sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num ...... [RUN]
+[0m16:48:55.290158 [info ] [Thread-2 (]: 2 of 4 START sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre ...... [RUN]
+[0m16:48:55.294381 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_num'
+[0m16:48:55.297927 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_pre'
+[0m16:48:55.301808 [debug] [Thread-1 (]: Began compiling node model.financial_dbt_project.stg_num
+[0m16:48:55.304409 [debug] [Thread-2 (]: Began compiling node model.financial_dbt_project.stg_pre
+[0m16:48:55.341550 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_dbt_project.stg_num"
+[0m16:48:55.341550 [debug] [Thread-2 (]: Writing injected SQL for node "model.financial_dbt_project.stg_pre"
+[0m16:48:55.354782 [debug] [Thread-1 (]: Began executing node model.financial_dbt_project.stg_num
+[0m16:48:55.355782 [debug] [Thread-2 (]: Began executing node model.financial_dbt_project.stg_pre
+[0m16:48:55.403661 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_dbt_project.stg_num"
+[0m16:48:55.403661 [debug] [Thread-2 (]: Writing runtime sql for node "model.financial_dbt_project.stg_pre"
+[0m16:48:55.409251 [debug] [Thread-1 (]: Using snowflake connection "model.financial_dbt_project.stg_num"
+[0m16:48:55.409251 [debug] [Thread-2 (]: Using snowflake connection "model.financial_dbt_project.stg_pre"
+[0m16:48:55.410970 [debug] [Thread-1 (]: On model.financial_dbt_project.stg_num: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_num"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num
+  
+   as (
+    
+
+SELECT
+    adsh,
+    tag,
+    version,
+    ddate,
+    qtrs,
+    uom,
+    segments,
+    coreg,
+    COALESCE(value, -1) AS value,
+    COALESCE(footnote, 'nan') AS footnote
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.NUM
+  );
+[0m16:48:55.411474 [debug] [Thread-2 (]: On model.financial_dbt_project.stg_pre: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_pre"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre
+  
+   as (
+    
+
+SELECT 
+    adsh,
+    report,
+    line,
+    stmt,
+    tag,
+    version,
+    plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.PRE
+  );
+[0m16:48:55.411474 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:48:55.411474 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:48:56.176791 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.767 seconds
+[0m16:48:56.197013 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1E1415220>]}
+[0m16:48:56.197013 [info ] [Thread-1 (]: 1 of 4 OK created sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num . [[32mSUCCESS 1[0m in 0.90s]
+[0m16:48:56.197013 [debug] [Thread-1 (]: Finished running node model.financial_dbt_project.stg_num
+[0m16:48:56.354521 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.942 seconds
+[0m16:48:56.357889 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F68DA4B0>]}
+[0m16:48:56.358945 [info ] [Thread-2 (]: 2 of 4 OK created sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre . [[32mSUCCESS 1[0m in 1.06s]
+[0m16:48:56.360164 [debug] [Thread-2 (]: Finished running node model.financial_dbt_project.stg_pre
+[0m16:48:56.360164 [debug] [Thread-4 (]: Began running node model.financial_dbt_project.fact_balance_sheet
+[0m16:48:56.362319 [info ] [Thread-4 (]: 3 of 4 START sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet  [RUN]
+[0m16:48:56.363391 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.financial_dbt_project.fact_balance_sheet'
+[0m16:48:56.363903 [debug] [Thread-4 (]: Began compiling node model.financial_dbt_project.fact_balance_sheet
+[0m16:48:56.368458 [debug] [Thread-4 (]: Writing injected SQL for node "model.financial_dbt_project.fact_balance_sheet"
+[0m16:48:56.368458 [debug] [Thread-4 (]: Began executing node model.financial_dbt_project.fact_balance_sheet
+[0m16:48:56.414509 [debug] [Thread-4 (]: Writing runtime sql for node "model.financial_dbt_project.fact_balance_sheet"
+[0m16:48:56.416641 [debug] [Thread-4 (]: Using snowflake connection "model.financial_dbt_project.fact_balance_sheet"
+[0m16:48:56.417794 [debug] [Thread-4 (]: On model.financial_dbt_project.fact_balance_sheet: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.fact_balance_sheet"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet
+         as
+        (
+
+SELECT
+    n.adsh,
+    n.tag,
+    n.value,
+    p.stmt,
+    p.plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num n
+JOIN ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre p
+ON n.adsh = p.adsh AND n.tag = p.tag
+WHERE p.stmt = 'BS'
+        );
+[0m16:48:56.418304 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:49:01.056879 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 4.639 seconds
+[0m16:49:01.064692 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F6895B80>]}
+[0m16:49:01.064692 [info ] [Thread-4 (]: 3 of 4 OK created sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet  [[32mSUCCESS 1[0m in 4.70s]
+[0m16:49:01.070762 [debug] [Thread-4 (]: Finished running node model.financial_dbt_project.fact_balance_sheet
+[0m16:49:01.072764 [debug] [Thread-6 (]: Began running node model.financial_dbt_project.financial_metrics
+[0m16:49:01.073272 [info ] [Thread-6 (]: 4 of 4 START sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics  [RUN]
+[0m16:49:01.076278 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.financial_dbt_project.financial_metrics'
+[0m16:49:01.076743 [debug] [Thread-6 (]: Began compiling node model.financial_dbt_project.financial_metrics
+[0m16:49:01.084161 [debug] [Thread-6 (]: Writing injected SQL for node "model.financial_dbt_project.financial_metrics"
+[0m16:49:01.086349 [debug] [Thread-6 (]: Began executing node model.financial_dbt_project.financial_metrics
+[0m16:49:01.092121 [debug] [Thread-6 (]: Writing runtime sql for node "model.financial_dbt_project.financial_metrics"
+[0m16:49:01.094646 [debug] [Thread-6 (]: Using snowflake connection "model.financial_dbt_project.financial_metrics"
+[0m16:49:01.095151 [debug] [Thread-6 (]: On model.financial_dbt_project.financial_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.financial_metrics"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics
+         as
+        (
+
+WITH balance_sheet AS (
+    SELECT *
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet
+),
+
+metrics AS (
+    SELECT 
+        adsh,
+        tag,
+        value,
+        stmt,
+        plabel,
+        SUM(value) OVER (PARTITION BY adsh) as total_value
+    FROM balance_sheet
+)
+
+SELECT 
+    adsh,
+    tag,
+    value,
+    stmt,
+    plabel,
+    total_value,
+    (value / NULLIF(total_value, 0)) * 100 as percentage_of_total
+FROM metrics
+        );
+[0m16:49:01.096594 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m16:49:03.501740 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 2.406 seconds
+[0m16:49:03.503071 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6fe270e9-57ed-4d23-98c3-f8bdfe535e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F69E25A0>]}
+[0m16:49:03.503071 [info ] [Thread-6 (]: 4 of 4 OK created sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics  [[32mSUCCESS 1[0m in 2.43s]
+[0m16:49:03.508249 [debug] [Thread-6 (]: Finished running node model.financial_dbt_project.financial_metrics
+[0m16:49:03.508758 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:49:03.510697 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1' was left open.
+[0m16:49:03.511202 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1: Close
+[0m16:49:03.619308 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING' was left open.
+[0m16:49:03.621855 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING: Close
+[0m16:49:03.701933 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_num' was left open.
+[0m16:49:03.704661 [debug] [MainThread]: On model.financial_dbt_project.stg_num: Close
+[0m16:49:03.796292 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_pre' was left open.
+[0m16:49:03.796292 [debug] [MainThread]: On model.financial_dbt_project.stg_pre: Close
+[0m16:49:03.873167 [debug] [MainThread]: Connection 'model.financial_dbt_project.fact_balance_sheet' was left open.
+[0m16:49:03.873167 [debug] [MainThread]: On model.financial_dbt_project.fact_balance_sheet: Close
+[0m16:49:03.993044 [debug] [MainThread]: Connection 'model.financial_dbt_project.financial_metrics' was left open.
+[0m16:49:03.994204 [debug] [MainThread]: On model.financial_dbt_project.financial_metrics: Close
+[0m16:49:04.080469 [info ] [MainThread]: 
+[0m16:49:04.080469 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 10.86 seconds (10.86s).
+[0m16:49:04.083539 [debug] [MainThread]: Command end result
+[0m16:49:04.111005 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m16:49:04.113526 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m16:49:04.120729 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\run_results.json
+[0m16:49:04.120729 [info ] [MainThread]: 
+[0m16:49:04.120729 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:49:04.120729 [info ] [MainThread]: 
+[0m16:49:04.120729 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m16:49:04.120729 [debug] [MainThread]: Command `dbt run` succeeded at 16:49:04.120729 after 13.45 seconds
+[0m16:49:04.120729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1E02DBE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1E418A0C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F5E131D0>]}
+[0m16:49:04.120729 [debug] [MainThread]: Flushing usage events
+[0m16:49:04.268641 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:41:10.790038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B05B12F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B05AD2210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B08A493D0>]}
+
+
+============================== 17:41:10.796093 | 5beba92f-5abb-4b51-9ab6-9aff44c37d71 ==============================
+[0m17:41:10.796093 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:41:10.798477 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dhrumil Patel\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Dhrumil Patel\\Downloads\\Sec-Financial-Data-Pipeline (2)\\Sec-Financial-Data-Pipeline\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:41:12.406954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B1A360200>]}
+[0m17:41:12.512425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B07388680>]}
+[0m17:41:12.515535 [info ] [MainThread]: Registered adapter: snowflake=1.9.1
+[0m17:41:12.943067 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:41:13.059566 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m17:41:13.059566 [debug] [MainThread]: previous checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, current checksum: c5b7abb6ee808f5223d184d6e66f3649e9350ec2336a59f7ba36e96eac25af11
+[0m17:41:13.059566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B082C4FE0>]}
+[0m17:41:14.433192 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_income_statement' in the 'models' section of file 'models\staging\schema.yml'
+[0m17:41:14.444077 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_cashflow' in the 'models' section of file 'models\staging\schema.yml'
+[0m17:41:14.778693 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_income_statement_adsh.f348e3d241' (models\staging\schema.yml) depends on a node named 'fact_income_statement' in package '' which was not found
+[0m17:41:14.780005 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_income_statement_value.261e217066' (models\staging\schema.yml) depends on a node named 'fact_income_statement' in package '' which was not found
+[0m17:41:14.781170 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_cashflow_adsh.2f84054910' (models\staging\schema.yml) depends on a node named 'fact_cashflow' in package '' which was not found
+[0m17:41:14.782178 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_cashflow_value.1c7c7f7378' (models\staging\schema.yml) depends on a node named 'fact_cashflow' in package '' which was not found
+[0m17:41:14.908657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B1A9FE2A0>]}
+[0m17:41:15.002567 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m17:41:15.002567 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m17:41:15.043253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B1A9FF860>]}
+[0m17:41:15.043253 [info ] [MainThread]: Found 4 models, 4 data tests, 7 sources, 472 macros
+[0m17:41:15.044266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B1AAB9460>]}
+[0m17:41:15.046437 [info ] [MainThread]: 
+[0m17:41:15.047436 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:41:15.048507 [info ] [MainThread]: 
+[0m17:41:15.049594 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:41:15.056308 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1'
+[0m17:41:15.150271 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1"
+[0m17:41:15.150271 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1"} */
+show terse schemas in database ASSIGNMENT2_TEAM1
+    limit 10000
+[0m17:41:15.150271 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:41:16.034698 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.885 seconds
+[0m17:41:16.045894 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING'
+[0m17:41:16.068619 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING"
+[0m17:41:16.069621 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING"} */
+show objects in ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING limit 10000;
+[0m17:41:16.069621 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:41:16.560578 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.490 seconds
+[0m17:41:16.564092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B1A4B1F70>]}
+[0m17:41:16.567921 [debug] [Thread-1 (]: Began running node model.financial_dbt_project.stg_num
+[0m17:41:16.569429 [debug] [Thread-2 (]: Began running node model.financial_dbt_project.stg_pre
+[0m17:41:16.569429 [info ] [Thread-1 (]: 1 of 4 START sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num ...... [RUN]
+[0m17:41:16.571948 [info ] [Thread-2 (]: 2 of 4 START sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre ...... [RUN]
+[0m17:41:16.571948 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_num'
+[0m17:41:16.573496 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_pre'
+[0m17:41:16.573496 [debug] [Thread-1 (]: Began compiling node model.financial_dbt_project.stg_num
+[0m17:41:16.573496 [debug] [Thread-2 (]: Began compiling node model.financial_dbt_project.stg_pre
+[0m17:41:16.585507 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_dbt_project.stg_num"
+[0m17:41:16.586507 [debug] [Thread-2 (]: Writing injected SQL for node "model.financial_dbt_project.stg_pre"
+[0m17:41:16.591238 [debug] [Thread-1 (]: Began executing node model.financial_dbt_project.stg_num
+[0m17:41:16.592378 [debug] [Thread-2 (]: Began executing node model.financial_dbt_project.stg_pre
+[0m17:41:16.628808 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_dbt_project.stg_num"
+[0m17:41:16.634814 [debug] [Thread-2 (]: Writing runtime sql for node "model.financial_dbt_project.stg_pre"
+[0m17:41:16.639266 [debug] [Thread-1 (]: Using snowflake connection "model.financial_dbt_project.stg_num"
+[0m17:41:16.639266 [debug] [Thread-2 (]: Using snowflake connection "model.financial_dbt_project.stg_pre"
+[0m17:41:16.641247 [debug] [Thread-1 (]: On model.financial_dbt_project.stg_num: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_num"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num
+  
+   as (
+    
+
+SELECT
+    adsh,
+    tag,
+    version,
+    ddate,
+    qtrs,
+    uom,
+    segments,
+    coreg,
+    COALESCE(value, -1) AS value,
+    COALESCE(footnote, 'nan') AS footnote
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.NUM
+  );
+[0m17:41:16.642308 [debug] [Thread-2 (]: On model.financial_dbt_project.stg_pre: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_pre"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre
+  
+   as (
+    
+
+SELECT 
+    adsh,
+    report,
+    line,
+    stmt,
+    tag,
+    version,
+    plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.PRE
+  );
+[0m17:41:16.643315 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:41:16.643315 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:41:17.404775 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.761 seconds
+[0m17:41:17.440926 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B05CC5250>]}
+[0m17:41:17.441119 [info ] [Thread-1 (]: 1 of 4 OK created sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num . [[32mSUCCESS 1[0m in 0.87s]
+[0m17:41:17.442759 [debug] [Thread-1 (]: Finished running node model.financial_dbt_project.stg_num
+[0m17:41:17.735205 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.093 seconds
+[0m17:41:17.735205 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B1B3CD5B0>]}
+[0m17:41:17.735205 [info ] [Thread-2 (]: 2 of 4 OK created sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre . [[32mSUCCESS 1[0m in 1.16s]
+[0m17:41:17.745614 [debug] [Thread-2 (]: Finished running node model.financial_dbt_project.stg_pre
+[0m17:41:17.745614 [debug] [Thread-4 (]: Began running node model.financial_dbt_project.fact_balance_sheet
+[0m17:41:17.748627 [info ] [Thread-4 (]: 3 of 4 START sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet  [RUN]
+[0m17:41:17.751098 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.financial_dbt_project.fact_balance_sheet'
+[0m17:41:17.753047 [debug] [Thread-4 (]: Began compiling node model.financial_dbt_project.fact_balance_sheet
+[0m17:41:17.761874 [debug] [Thread-4 (]: Writing injected SQL for node "model.financial_dbt_project.fact_balance_sheet"
+[0m17:41:17.763766 [debug] [Thread-4 (]: Began executing node model.financial_dbt_project.fact_balance_sheet
+[0m17:41:17.791094 [debug] [Thread-4 (]: Writing runtime sql for node "model.financial_dbt_project.fact_balance_sheet"
+[0m17:41:17.793744 [debug] [Thread-4 (]: Using snowflake connection "model.financial_dbt_project.fact_balance_sheet"
+[0m17:41:17.793744 [debug] [Thread-4 (]: On model.financial_dbt_project.fact_balance_sheet: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.fact_balance_sheet"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet
+         as
+        (
+
+SELECT
+    n.adsh,
+    n.tag,
+    n.value,
+    p.stmt,
+    p.plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num n
+JOIN ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre p
+ON n.adsh = p.adsh AND n.tag = p.tag
+WHERE p.stmt = 'BS'
+        );
+[0m17:41:17.794756 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:41:21.395415 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 3.602 seconds
+[0m17:41:21.395415 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B1B3B9D00>]}
+[0m17:41:21.395415 [info ] [Thread-4 (]: 3 of 4 OK created sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet  [[32mSUCCESS 1[0m in 3.64s]
+[0m17:41:21.402340 [debug] [Thread-4 (]: Finished running node model.financial_dbt_project.fact_balance_sheet
+[0m17:41:21.402340 [debug] [Thread-6 (]: Began running node model.financial_dbt_project.financial_metrics
+[0m17:41:21.402340 [info ] [Thread-6 (]: 4 of 4 START sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics  [RUN]
+[0m17:41:21.402340 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.financial_dbt_project.financial_metrics'
+[0m17:41:21.402340 [debug] [Thread-6 (]: Began compiling node model.financial_dbt_project.financial_metrics
+[0m17:41:21.406846 [debug] [Thread-6 (]: Writing injected SQL for node "model.financial_dbt_project.financial_metrics"
+[0m17:41:21.411352 [debug] [Thread-6 (]: Began executing node model.financial_dbt_project.financial_metrics
+[0m17:41:21.411352 [debug] [Thread-6 (]: Writing runtime sql for node "model.financial_dbt_project.financial_metrics"
+[0m17:41:21.411352 [debug] [Thread-6 (]: Using snowflake connection "model.financial_dbt_project.financial_metrics"
+[0m17:41:21.411352 [debug] [Thread-6 (]: On model.financial_dbt_project.financial_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.financial_metrics"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics
+         as
+        (
+
+WITH balance_sheet AS (
+    SELECT *
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet
+),
+
+metrics AS (
+    SELECT 
+        adsh,
+        tag,
+        value,
+        stmt,
+        plabel,
+        SUM(value) OVER (PARTITION BY adsh) as total_value
+    FROM balance_sheet
+)
+
+SELECT 
+    adsh,
+    tag,
+    value,
+    stmt,
+    plabel,
+    total_value,
+    (value / NULLIF(total_value, 0)) * 100 as percentage_of_total
+FROM metrics
+        );
+[0m17:41:21.411352 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m17:41:24.482694 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 3.064 seconds
+[0m17:41:24.482694 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5beba92f-5abb-4b51-9ab6-9aff44c37d71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B1B3BBB90>]}
+[0m17:41:24.482694 [info ] [Thread-6 (]: 4 of 4 OK created sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics  [[32mSUCCESS 1[0m in 3.08s]
+[0m17:41:24.482694 [debug] [Thread-6 (]: Finished running node model.financial_dbt_project.financial_metrics
+[0m17:41:24.482694 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:41:24.482694 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1' was left open.
+[0m17:41:24.482694 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1: Close
+[0m17:41:24.568138 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING' was left open.
+[0m17:41:24.569565 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING: Close
+[0m17:41:24.655712 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_num' was left open.
+[0m17:41:24.655712 [debug] [MainThread]: On model.financial_dbt_project.stg_num: Close
+[0m17:41:24.752395 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_pre' was left open.
+[0m17:41:24.752395 [debug] [MainThread]: On model.financial_dbt_project.stg_pre: Close
+[0m17:41:24.857268 [debug] [MainThread]: Connection 'model.financial_dbt_project.fact_balance_sheet' was left open.
+[0m17:41:24.857268 [debug] [MainThread]: On model.financial_dbt_project.fact_balance_sheet: Close
+[0m17:41:25.015256 [debug] [MainThread]: Connection 'model.financial_dbt_project.financial_metrics' was left open.
+[0m17:41:25.019192 [debug] [MainThread]: On model.financial_dbt_project.financial_metrics: Close
+[0m17:41:25.116369 [info ] [MainThread]: 
+[0m17:41:25.116874 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 10.07 seconds (10.07s).
+[0m17:41:25.118177 [debug] [MainThread]: Command end result
+[0m17:41:25.146410 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m17:41:25.149259 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m17:41:25.151146 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\run_results.json
+[0m17:41:25.151146 [info ] [MainThread]: 
+[0m17:41:25.157414 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:41:25.158623 [info ] [MainThread]: 
+[0m17:41:25.160400 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m17:41:25.162379 [debug] [MainThread]: Command `dbt run` succeeded at 17:41:25.162379 after 14.59 seconds
+[0m17:41:25.162379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B0890EAE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B07C48B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B1A8119A0>]}
+[0m17:41:25.162379 [debug] [MainThread]: Flushing usage events
+[0m17:41:25.285165 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:57:58.515835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753AA05A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753A4EDD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753B1DFC50>]}
+
+
+============================== 17:57:58.519112 | 40ee32f0-4785-48b4-b19f-b8669e064b1c ==============================
+[0m17:57:58.519112 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:57:58.522675 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Dhrumil Patel\\.dbt', 'log_path': 'C:\\Users\\Dhrumil Patel\\Downloads\\Sec-Financial-Data-Pipeline (2)\\Sec-Financial-Data-Pipeline\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:58:00.049498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753A4A46B0>]}
+[0m17:58:00.142019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001754A924290>]}
+[0m17:58:00.142019 [info ] [MainThread]: Registered adapter: snowflake=1.9.1
+[0m17:58:00.607855 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:58:00.844810 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:58:00.844810 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:58:00.896823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001754CC133B0>]}
+[0m17:58:00.993649 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m17:58:00.996681 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m17:58:01.029589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001754CC131A0>]}
+[0m17:58:01.029589 [info ] [MainThread]: Found 4 models, 4 data tests, 7 sources, 472 macros
+[0m17:58:01.029589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001754AEEDDF0>]}
+[0m17:58:01.034540 [info ] [MainThread]: 
+[0m17:58:01.034540 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:58:01.036450 [info ] [MainThread]: 
+[0m17:58:01.038254 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:58:01.045396 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1'
+[0m17:58:01.136644 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1"
+[0m17:58:01.136644 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1"} */
+show terse schemas in database ASSIGNMENT2_TEAM1
+    limit 10000
+[0m17:58:01.136644 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:58:02.193180 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.057 seconds
+[0m17:58:02.205396 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING'
+[0m17:58:02.235071 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING"
+[0m17:58:02.235071 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING"} */
+show objects in ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING limit 10000;
+[0m17:58:02.235071 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:58:02.727145 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.488 seconds
+[0m17:58:02.731736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753B0A8770>]}
+[0m17:58:02.733814 [debug] [Thread-1 (]: Began running node model.financial_dbt_project.stg_num
+[0m17:58:02.733814 [debug] [Thread-2 (]: Began running node model.financial_dbt_project.stg_pre
+[0m17:58:02.737912 [info ] [Thread-1 (]: 1 of 4 START sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num ...... [RUN]
+[0m17:58:02.738418 [info ] [Thread-2 (]: 2 of 4 START sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre ...... [RUN]
+[0m17:58:02.739424 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_num'
+[0m17:58:02.740812 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_pre'
+[0m17:58:02.741354 [debug] [Thread-1 (]: Began compiling node model.financial_dbt_project.stg_num
+[0m17:58:02.741354 [debug] [Thread-2 (]: Began compiling node model.financial_dbt_project.stg_pre
+[0m17:58:02.743965 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_dbt_project.stg_num"
+[0m17:58:02.758979 [debug] [Thread-2 (]: Writing injected SQL for node "model.financial_dbt_project.stg_pre"
+[0m17:58:02.760128 [debug] [Thread-1 (]: Began executing node model.financial_dbt_project.stg_num
+[0m17:58:02.774714 [debug] [Thread-2 (]: Began executing node model.financial_dbt_project.stg_pre
+[0m17:58:02.793516 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_dbt_project.stg_num"
+[0m17:58:02.793516 [debug] [Thread-2 (]: Writing runtime sql for node "model.financial_dbt_project.stg_pre"
+[0m17:58:02.802157 [debug] [Thread-1 (]: Using snowflake connection "model.financial_dbt_project.stg_num"
+[0m17:58:02.802664 [debug] [Thread-1 (]: On model.financial_dbt_project.stg_num: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_num"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num
+  
+   as (
+    
+
+SELECT
+    adsh,
+    tag,
+    version,
+    ddate,
+    qtrs,
+    uom,
+    segments,
+    coreg,
+    COALESCE(value, -1) AS value,
+    COALESCE(footnote, 'nan') AS footnote
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.NUM
+  );
+[0m17:58:02.802664 [debug] [Thread-2 (]: Using snowflake connection "model.financial_dbt_project.stg_pre"
+[0m17:58:02.804396 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:58:02.804396 [debug] [Thread-2 (]: On model.financial_dbt_project.stg_pre: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_pre"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre
+  
+   as (
+    
+
+SELECT 
+    adsh,
+    report,
+    line,
+    stmt,
+    tag,
+    version,
+    plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.PRE
+  );
+[0m17:58:02.805413 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:58:03.514133 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.709 seconds
+[0m17:58:03.572391 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.769 seconds
+[0m17:58:03.576397 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001754D4685C0>]}
+[0m17:58:03.576397 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001754D895B50>]}
+[0m17:58:03.577732 [info ] [Thread-2 (]: 2 of 4 OK created sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre . [[32mSUCCESS 1[0m in 0.83s]
+[0m17:58:03.579798 [debug] [Thread-2 (]: Finished running node model.financial_dbt_project.stg_pre
+[0m17:58:03.578739 [info ] [Thread-1 (]: 1 of 4 OK created sql view model FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num . [[32mSUCCESS 1[0m in 0.84s]
+[0m17:58:03.580975 [debug] [Thread-1 (]: Finished running node model.financial_dbt_project.stg_num
+[0m17:58:03.582321 [debug] [Thread-4 (]: Began running node model.financial_dbt_project.fact_balance_sheet
+[0m17:58:03.583523 [info ] [Thread-4 (]: 3 of 4 START sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet  [RUN]
+[0m17:58:03.584699 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.financial_dbt_project.fact_balance_sheet'
+[0m17:58:03.584699 [debug] [Thread-4 (]: Began compiling node model.financial_dbt_project.fact_balance_sheet
+[0m17:58:03.589399 [debug] [Thread-4 (]: Writing injected SQL for node "model.financial_dbt_project.fact_balance_sheet"
+[0m17:58:03.591335 [debug] [Thread-4 (]: Began executing node model.financial_dbt_project.fact_balance_sheet
+[0m17:58:03.617108 [debug] [Thread-4 (]: Writing runtime sql for node "model.financial_dbt_project.fact_balance_sheet"
+[0m17:58:03.617108 [debug] [Thread-4 (]: Using snowflake connection "model.financial_dbt_project.fact_balance_sheet"
+[0m17:58:03.622372 [debug] [Thread-4 (]: On model.financial_dbt_project.fact_balance_sheet: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.fact_balance_sheet"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet
+         as
+        (
+
+SELECT
+    n.adsh,
+    n.tag,
+    n.value,
+    p.stmt,
+    p.plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num n
+JOIN ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_pre p
+ON n.adsh = p.adsh AND n.tag = p.tag
+WHERE p.stmt = 'BS'
+        );
+[0m17:58:03.622372 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:58:07.923602 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 4.300 seconds
+[0m17:58:07.923602 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001754D8D9820>]}
+[0m17:58:07.923602 [info ] [Thread-4 (]: 3 of 4 OK created sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet  [[32mSUCCESS 1[0m in 4.34s]
+[0m17:58:07.930458 [debug] [Thread-4 (]: Finished running node model.financial_dbt_project.fact_balance_sheet
+[0m17:58:07.931466 [debug] [Thread-6 (]: Began running node model.financial_dbt_project.financial_metrics
+[0m17:58:07.932667 [info ] [Thread-6 (]: 4 of 4 START sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics  [RUN]
+[0m17:58:07.932667 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.financial_dbt_project.financial_metrics'
+[0m17:58:07.934766 [debug] [Thread-6 (]: Began compiling node model.financial_dbt_project.financial_metrics
+[0m17:58:07.935275 [debug] [Thread-6 (]: Writing injected SQL for node "model.financial_dbt_project.financial_metrics"
+[0m17:58:07.935275 [debug] [Thread-6 (]: Began executing node model.financial_dbt_project.financial_metrics
+[0m17:58:07.941672 [debug] [Thread-6 (]: Writing runtime sql for node "model.financial_dbt_project.financial_metrics"
+[0m17:58:07.943238 [debug] [Thread-6 (]: Using snowflake connection "model.financial_dbt_project.financial_metrics"
+[0m17:58:07.944897 [debug] [Thread-6 (]: On model.financial_dbt_project.financial_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.financial_metrics"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics
+         as
+        (
+
+WITH balance_sheet AS (
+    SELECT *
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.fact_balance_sheet
+),
+
+metrics AS (
+    SELECT 
+        adsh,
+        tag,
+        value,
+        stmt,
+        plabel,
+        SUM(value) OVER (PARTITION BY adsh) as total_value
+    FROM balance_sheet
+)
+
+SELECT 
+    adsh,
+    tag,
+    value,
+    stmt,
+    plabel,
+    total_value,
+    (value / NULLIF(total_value, 0)) * 100 as percentage_of_total
+FROM metrics
+        );
+[0m17:58:07.944897 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m17:58:10.526291 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 2.581 seconds
+[0m17:58:10.534132 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ee32f0-4785-48b4-b19f-b8669e064b1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001754D9E0080>]}
+[0m17:58:10.542336 [info ] [Thread-6 (]: 4 of 4 OK created sql table model FACT_TABLE_STAGING_FACT_TABLE_STAGING.financial_metrics  [[32mSUCCESS 1[0m in 2.60s]
+[0m17:58:10.545162 [debug] [Thread-6 (]: Finished running node model.financial_dbt_project.financial_metrics
+[0m17:58:10.551596 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:58:10.551596 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1' was left open.
+[0m17:58:10.553607 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1: Close
+[0m17:58:10.650062 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING' was left open.
+[0m17:58:10.653085 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_FACT_TABLE_STAGING: Close
+[0m17:58:10.754103 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_num' was left open.
+[0m17:58:10.767282 [debug] [MainThread]: On model.financial_dbt_project.stg_num: Close
+[0m17:58:10.883096 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_pre' was left open.
+[0m17:58:10.884286 [debug] [MainThread]: On model.financial_dbt_project.stg_pre: Close
+[0m17:58:10.984814 [debug] [MainThread]: Connection 'model.financial_dbt_project.fact_balance_sheet' was left open.
+[0m17:58:10.984814 [debug] [MainThread]: On model.financial_dbt_project.fact_balance_sheet: Close
+[0m17:58:11.083074 [debug] [MainThread]: Connection 'model.financial_dbt_project.financial_metrics' was left open.
+[0m17:58:11.088603 [debug] [MainThread]: On model.financial_dbt_project.financial_metrics: Close
+[0m17:58:11.192425 [info ] [MainThread]: 
+[0m17:58:11.203473 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 10.15 seconds (10.15s).
+[0m17:58:11.213617 [debug] [MainThread]: Command end result
+[0m17:58:11.267376 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m17:58:11.270384 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m17:58:11.279371 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\run_results.json
+[0m17:58:11.279371 [info ] [MainThread]: 
+[0m17:58:11.280624 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:58:11.281956 [info ] [MainThread]: 
+[0m17:58:11.282966 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m17:58:11.283964 [debug] [MainThread]: Command `dbt run` succeeded at 17:58:11.283964 after 12.96 seconds
+[0m17:58:11.284964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753A96B8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753A6729C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001753B0AA1E0>]}
+[0m17:58:11.284964 [debug] [MainThread]: Flushing usage events
+[0m17:58:11.481031 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:16:57.015334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D32D65B1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D32F8FE570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D32F7B8E60>]}
+
+
+============================== 21:16:57.035530 | 6a9e8a0e-5a41-4ce5-8465-f332085c99b7 ==============================
+[0m21:16:57.035530 [info ] [MainThread]: Running with dbt=1.9.2
+[0m21:16:57.040682 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Dhrumil Patel\\Downloads\\Sec-Financial-Data-Pipeline (2)\\Sec-Financial-Data-Pipeline\\logs', 'profiles_dir': 'C:\\Users\\Dhrumil Patel\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:17:03.859173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D32F845160>]}
+[0m21:17:04.070891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3307774A0>]}
+[0m21:17:04.083491 [info ] [MainThread]: Registered adapter: snowflake=1.9.1
+[0m21:17:05.150798 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m21:17:05.392848 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m21:17:05.392848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D34226A510>]}
+[0m21:17:09.257373 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_income_statement' in the 'models' section of file 'models\staging\schema.yml'
+[0m21:17:09.260463 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_cashflow' in the 'models' section of file 'models\staging\schema.yml'
+[0m21:17:09.972254 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_income_statement_adsh.f348e3d241' (models\staging\schema.yml) depends on a node named 'fact_income_statement' in package '' which was not found
+[0m21:17:09.989010 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_income_statement_value.261e217066' (models\staging\schema.yml) depends on a node named 'fact_income_statement' in package '' which was not found
+[0m21:17:09.990824 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_cashflow_adsh.2f84054910' (models\staging\schema.yml) depends on a node named 'fact_cashflow' in package '' which was not found
+[0m21:17:09.990824 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_dbt_project.not_null_fact_cashflow_value.1c7c7f7378' (models\staging\schema.yml) depends on a node named 'fact_cashflow' in package '' which was not found
+[0m21:17:10.292308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3421E5280>]}
+[0m21:17:10.503614 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m21:17:10.503614 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m21:17:10.603385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342324440>]}
+[0m21:17:10.603385 [info ] [MainThread]: Found 4 models, 4 data tests, 7 sources, 472 macros
+[0m21:17:10.605696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D34249D9A0>]}
+[0m21:17:10.612052 [info ] [MainThread]: 
+[0m21:17:10.614036 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m21:17:10.617161 [info ] [MainThread]: 
+[0m21:17:10.619089 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:17:10.635878 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1'
+[0m21:17:10.933612 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1"
+[0m21:17:10.935057 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1"} */
+show terse schemas in database ASSIGNMENT2_TEAM1
+    limit 10000
+[0m21:17:10.936570 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:12.503616 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.567 seconds
+[0m21:17:12.509440 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ASSIGNMENT2_TEAM1, now create_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING)
+[0m21:17:12.512270 [debug] [ThreadPool]: Creating schema "database: "ASSIGNMENT2_TEAM1"
+schema: "FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"
+"
+[0m21:17:12.525995 [debug] [ThreadPool]: Using snowflake connection "create_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"
+[0m21:17:12.531014 [debug] [ThreadPool]: On create_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "create_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"} */
+create schema if not exists ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING
+[0m21:17:12.905811 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.374 seconds
+[0m21:17:12.914722 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING'
+[0m21:17:12.960117 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"
+[0m21:17:12.961896 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"} */
+show objects in ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING limit 10000;
+[0m21:17:12.964888 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:13.833705 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.873 seconds
+[0m21:17:13.852719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342334DD0>]}
+[0m21:17:13.876472 [debug] [Thread-1 (]: Began running node model.financial_dbt_project.stg_num
+[0m21:17:13.876991 [debug] [Thread-2 (]: Began running node model.financial_dbt_project.stg_pre
+[0m21:17:13.881732 [info ] [Thread-1 (]: 1 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [RUN]
+[0m21:17:13.885411 [info ] [Thread-2 (]: 2 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [RUN]
+[0m21:17:13.890557 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_num'
+[0m21:17:13.892162 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_pre'
+[0m21:17:13.895039 [debug] [Thread-1 (]: Began compiling node model.financial_dbt_project.stg_num
+[0m21:17:13.897339 [debug] [Thread-2 (]: Began compiling node model.financial_dbt_project.stg_pre
+[0m21:17:13.931353 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_dbt_project.stg_num"
+[0m21:17:13.940698 [debug] [Thread-2 (]: Writing injected SQL for node "model.financial_dbt_project.stg_pre"
+[0m21:17:13.942223 [debug] [Thread-1 (]: Began executing node model.financial_dbt_project.stg_num
+[0m21:17:13.944784 [debug] [Thread-2 (]: Began executing node model.financial_dbt_project.stg_pre
+[0m21:17:14.020519 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_dbt_project.stg_num"
+[0m21:17:14.032691 [debug] [Thread-2 (]: Writing runtime sql for node "model.financial_dbt_project.stg_pre"
+[0m21:17:14.036027 [debug] [Thread-1 (]: Using snowflake connection "model.financial_dbt_project.stg_num"
+[0m21:17:14.036027 [debug] [Thread-1 (]: On model.financial_dbt_project.stg_num: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_num"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num
+  
+   as (
+    
+
+SELECT
+    adsh,
+    tag,
+    version,
+    ddate,
+    qtrs,
+    uom,
+    segments,
+    coreg,
+    COALESCE(value, -1) AS value,
+    COALESCE(footnote, 'nan') AS footnote
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.NUM
+  );
+[0m21:17:14.042482 [debug] [Thread-2 (]: Using snowflake connection "model.financial_dbt_project.stg_pre"
+[0m21:17:14.043492 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:17:14.043492 [debug] [Thread-2 (]: On model.financial_dbt_project.stg_pre: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_pre"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre
+  
+   as (
+    
+
+SELECT 
+    adsh,
+    report,
+    line,
+    stmt,
+    tag,
+    version,
+    plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.PRE
+  );
+[0m21:17:14.046003 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:17:14.851025 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.803 seconds
+[0m21:17:14.948038 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D32F814620>]}
+[0m21:17:14.952727 [info ] [Thread-2 (]: 2 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [[32mSUCCESS 1[0m in 1.05s]
+[0m21:17:14.957962 [debug] [Thread-2 (]: Finished running node model.financial_dbt_project.stg_pre
+[0m21:17:15.057229 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.013 seconds
+[0m21:17:15.062774 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342F16330>]}
+[0m21:17:15.068070 [info ] [Thread-1 (]: 1 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [[32mSUCCESS 1[0m in 1.18s]
+[0m21:17:15.069614 [debug] [Thread-1 (]: Finished running node model.financial_dbt_project.stg_num
+[0m21:17:15.069614 [debug] [Thread-4 (]: Began running node model.financial_dbt_project.fact_balance_sheet
+[0m21:17:15.073868 [info ] [Thread-4 (]: 3 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [RUN]
+[0m21:17:15.077886 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.financial_dbt_project.fact_balance_sheet'
+[0m21:17:15.077886 [debug] [Thread-4 (]: Began compiling node model.financial_dbt_project.fact_balance_sheet
+[0m21:17:15.094022 [debug] [Thread-4 (]: Writing injected SQL for node "model.financial_dbt_project.fact_balance_sheet"
+[0m21:17:15.098253 [debug] [Thread-4 (]: Began executing node model.financial_dbt_project.fact_balance_sheet
+[0m21:17:15.196423 [debug] [Thread-4 (]: Writing runtime sql for node "model.financial_dbt_project.fact_balance_sheet"
+[0m21:17:15.202791 [debug] [Thread-4 (]: Using snowflake connection "model.financial_dbt_project.fact_balance_sheet"
+[0m21:17:15.204908 [debug] [Thread-4 (]: On model.financial_dbt_project.fact_balance_sheet: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.fact_balance_sheet"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+         as
+        (
+
+SELECT
+    n.adsh,
+    n.tag,
+    n.value,
+    p.stmt,
+    p.plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num n
+JOIN ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre p
+ON n.adsh = p.adsh AND n.tag = p.tag
+WHERE p.stmt = 'BS'
+        );
+[0m21:17:15.204908 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:17:18.638867 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 3.435 seconds
+[0m21:17:18.656255 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342F15250>]}
+[0m21:17:18.664621 [info ] [Thread-4 (]: 3 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [[32mSUCCESS 1[0m in 3.58s]
+[0m21:17:18.671534 [debug] [Thread-4 (]: Finished running node model.financial_dbt_project.fact_balance_sheet
+[0m21:17:18.675938 [debug] [Thread-6 (]: Began running node model.financial_dbt_project.financial_metrics
+[0m21:17:18.677997 [info ] [Thread-6 (]: 4 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [RUN]
+[0m21:17:18.684394 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.financial_dbt_project.financial_metrics'
+[0m21:17:18.686862 [debug] [Thread-6 (]: Began compiling node model.financial_dbt_project.financial_metrics
+[0m21:17:18.701188 [debug] [Thread-6 (]: Writing injected SQL for node "model.financial_dbt_project.financial_metrics"
+[0m21:17:18.706102 [debug] [Thread-6 (]: Began executing node model.financial_dbt_project.financial_metrics
+[0m21:17:18.719020 [debug] [Thread-6 (]: Writing runtime sql for node "model.financial_dbt_project.financial_metrics"
+[0m21:17:18.732389 [debug] [Thread-6 (]: Using snowflake connection "model.financial_dbt_project.financial_metrics"
+[0m21:17:18.734814 [debug] [Thread-6 (]: On model.financial_dbt_project.financial_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.financial_metrics"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics
+         as
+        (
+
+WITH balance_sheet AS (
+    SELECT *
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+),
+
+metrics AS (
+    SELECT 
+        adsh,
+        tag,
+        value,
+        stmt,
+        plabel,
+        SUM(value) OVER (PARTITION BY adsh) as total_value
+    FROM balance_sheet
+)
+
+SELECT 
+    adsh,
+    tag,
+    value,
+    stmt,
+    plabel,
+    total_value,
+    (value / NULLIF(total_value, 0)) * 100 as percentage_of_total
+FROM metrics
+        );
+[0m21:17:18.738547 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m21:17:21.538849 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 2.800 seconds
+[0m21:17:21.547475 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a9e8a0e-5a41-4ce5-8465-f332085c99b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342EA7D40>]}
+[0m21:17:21.553704 [info ] [Thread-6 (]: 4 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [[32mSUCCESS 1[0m in 2.86s]
+[0m21:17:21.554224 [debug] [Thread-6 (]: Finished running node model.financial_dbt_project.financial_metrics
+[0m21:17:21.569101 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:17:21.570591 [debug] [MainThread]: Connection 'create_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING' was left open.
+[0m21:17:21.573452 [debug] [MainThread]: On create_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: Close
+[0m21:17:21.671376 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING' was left open.
+[0m21:17:21.674131 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: Close
+[0m21:17:21.770311 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_num' was left open.
+[0m21:17:21.772647 [debug] [MainThread]: On model.financial_dbt_project.stg_num: Close
+[0m21:17:22.124076 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_pre' was left open.
+[0m21:17:22.124076 [debug] [MainThread]: On model.financial_dbt_project.stg_pre: Close
+[0m21:17:22.216371 [debug] [MainThread]: Connection 'model.financial_dbt_project.fact_balance_sheet' was left open.
+[0m21:17:22.216371 [debug] [MainThread]: On model.financial_dbt_project.fact_balance_sheet: Close
+[0m21:17:22.315823 [debug] [MainThread]: Connection 'model.financial_dbt_project.financial_metrics' was left open.
+[0m21:17:22.318379 [debug] [MainThread]: On model.financial_dbt_project.financial_metrics: Close
+[0m21:17:22.396822 [info ] [MainThread]: 
+[0m21:17:22.399271 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 11.78 seconds (11.78s).
+[0m21:17:22.404186 [debug] [MainThread]: Command end result
+[0m21:17:22.470509 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m21:17:22.476697 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m21:17:22.485557 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\run_results.json
+[0m21:17:22.494192 [info ] [MainThread]: 
+[0m21:17:22.495449 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:17:22.499475 [info ] [MainThread]: 
+[0m21:17:22.501988 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m21:17:22.505578 [debug] [MainThread]: Command `dbt run` succeeded at 21:17:22.505578 after 26.28 seconds
+[0m21:17:22.508126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D32D65B1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3425109B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D32FC2D7F0>]}
+[0m21:17:22.509663 [debug] [MainThread]: Flushing usage events
+[0m21:17:22.641033 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:50:31.780458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C263431A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C28946060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C28F0E0F0>]}
+
+
+============================== 21:50:31.806431 | 9fd0c857-dc94-4ec7-8be6-51628398061a ==============================
+[0m21:50:31.806431 [info ] [MainThread]: Running with dbt=1.9.2
+[0m21:50:31.809097 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Dhrumil Patel\\Downloads\\Sec-Financial-Data-Pipeline (2)\\Sec-Financial-Data-Pipeline\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Dhrumil Patel\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:50:38.231534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C39BC6840>]}
+[0m21:50:38.447223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C389907A0>]}
+[0m21:50:38.451178 [info ] [MainThread]: Registered adapter: snowflake=1.9.1
+[0m21:50:39.566485 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m21:50:40.174541 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:50:40.180786 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:50:40.315079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C3AC8B380>]}
+[0m21:50:40.575322 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m21:50:40.583073 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m21:50:40.664952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C3B0374A0>]}
+[0m21:50:40.668062 [info ] [MainThread]: Found 4 models, 4 data tests, 7 sources, 472 macros
+[0m21:50:40.669362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C28DAC6B0>]}
+[0m21:50:40.672251 [info ] [MainThread]: 
+[0m21:50:40.676471 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m21:50:40.678080 [info ] [MainThread]: 
+[0m21:50:40.682755 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:50:40.693103 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1'
+[0m21:50:40.937515 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1"
+[0m21:50:40.937515 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1"} */
+show terse schemas in database ASSIGNMENT2_TEAM1
+    limit 10000
+[0m21:50:40.937515 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:50:42.386635 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.447 seconds
+[0m21:50:42.393922 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING'
+[0m21:50:42.446607 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"
+[0m21:50:42.446607 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"} */
+show objects in ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING limit 10000;
+[0m21:50:42.446607 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:50:43.220279 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.761 seconds
+[0m21:50:43.220279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C26523080>]}
+[0m21:50:43.236426 [debug] [Thread-1 (]: Began running node model.financial_dbt_project.stg_num
+[0m21:50:43.236940 [debug] [Thread-2 (]: Began running node model.financial_dbt_project.stg_pre
+[0m21:50:43.236940 [info ] [Thread-1 (]: 1 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [RUN]
+[0m21:50:43.240456 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_num'
+[0m21:50:43.236940 [info ] [Thread-2 (]: 2 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [RUN]
+[0m21:50:43.240456 [debug] [Thread-1 (]: Began compiling node model.financial_dbt_project.stg_num
+[0m21:50:43.240456 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_pre'
+[0m21:50:43.267141 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_dbt_project.stg_num"
+[0m21:50:43.267141 [debug] [Thread-2 (]: Began compiling node model.financial_dbt_project.stg_pre
+[0m21:50:43.277857 [debug] [Thread-2 (]: Writing injected SQL for node "model.financial_dbt_project.stg_pre"
+[0m21:50:43.279153 [debug] [Thread-1 (]: Began executing node model.financial_dbt_project.stg_num
+[0m21:50:43.285901 [debug] [Thread-2 (]: Began executing node model.financial_dbt_project.stg_pre
+[0m21:50:43.416057 [debug] [Thread-2 (]: Writing runtime sql for node "model.financial_dbt_project.stg_pre"
+[0m21:50:43.416057 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_dbt_project.stg_num"
+[0m21:50:43.422631 [debug] [Thread-2 (]: Using snowflake connection "model.financial_dbt_project.stg_pre"
+[0m21:50:43.422631 [debug] [Thread-2 (]: On model.financial_dbt_project.stg_pre: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_pre"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre
+  
+   as (
+    
+
+SELECT 
+    adsh,
+    report,
+    line,
+    stmt,
+    tag,
+    version,
+    plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.PRE
+  );
+[0m21:50:43.426249 [debug] [Thread-1 (]: Using snowflake connection "model.financial_dbt_project.stg_num"
+[0m21:50:43.426249 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:50:43.426249 [debug] [Thread-1 (]: On model.financial_dbt_project.stg_num: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_num"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num
+  
+   as (
+    
+
+SELECT
+    adsh,
+    tag,
+    version,
+    ddate,
+    qtrs,
+    uom,
+    segments,
+    coreg,
+    COALESCE(value, -1) AS value,
+    COALESCE(footnote, 'nan') AS footnote
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.NUM
+  );
+[0m21:50:43.429577 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:50:44.043739 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.613 seconds
+[0m21:50:44.126092 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C264993A0>]}
+[0m21:50:44.129266 [info ] [Thread-1 (]: 1 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [[32mSUCCESS 1[0m in 0.88s]
+[0m21:50:44.135024 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.708 seconds
+[0m21:50:44.137255 [debug] [Thread-1 (]: Finished running node model.financial_dbt_project.stg_num
+[0m21:50:44.147645 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C3B8EC530>]}
+[0m21:50:44.152390 [info ] [Thread-2 (]: 2 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [[32mSUCCESS 1[0m in 0.90s]
+[0m21:50:44.157471 [debug] [Thread-2 (]: Finished running node model.financial_dbt_project.stg_pre
+[0m21:50:44.160666 [debug] [Thread-4 (]: Began running node model.financial_dbt_project.fact_balance_sheet
+[0m21:50:44.165396 [info ] [Thread-4 (]: 3 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [RUN]
+[0m21:50:44.172200 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.financial_dbt_project.fact_balance_sheet'
+[0m21:50:44.175220 [debug] [Thread-4 (]: Began compiling node model.financial_dbt_project.fact_balance_sheet
+[0m21:50:44.189479 [debug] [Thread-4 (]: Writing injected SQL for node "model.financial_dbt_project.fact_balance_sheet"
+[0m21:50:44.197764 [debug] [Thread-4 (]: Began executing node model.financial_dbt_project.fact_balance_sheet
+[0m21:50:44.379982 [debug] [Thread-4 (]: Writing runtime sql for node "model.financial_dbt_project.fact_balance_sheet"
+[0m21:50:44.389604 [debug] [Thread-4 (]: Using snowflake connection "model.financial_dbt_project.fact_balance_sheet"
+[0m21:50:44.391965 [debug] [Thread-4 (]: On model.financial_dbt_project.fact_balance_sheet: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.fact_balance_sheet"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+         as
+        (
+
+SELECT
+    n.adsh,
+    n.tag,
+    n.value,
+    p.stmt,
+    p.plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num n
+JOIN ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre p
+ON n.adsh = p.adsh AND n.tag = p.tag
+WHERE p.stmt = 'BS'
+        );
+[0m21:50:44.396155 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:50:48.243488 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 3.848 seconds
+[0m21:50:48.258646 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C3B94AB10>]}
+[0m21:50:48.275185 [info ] [Thread-4 (]: 3 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [[32mSUCCESS 1[0m in 4.09s]
+[0m21:50:48.281100 [debug] [Thread-4 (]: Finished running node model.financial_dbt_project.fact_balance_sheet
+[0m21:50:48.281100 [debug] [Thread-6 (]: Began running node model.financial_dbt_project.financial_metrics
+[0m21:50:48.302130 [info ] [Thread-6 (]: 4 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [RUN]
+[0m21:50:48.313998 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.financial_dbt_project.financial_metrics'
+[0m21:50:48.322513 [debug] [Thread-6 (]: Began compiling node model.financial_dbt_project.financial_metrics
+[0m21:50:48.379132 [debug] [Thread-6 (]: Writing injected SQL for node "model.financial_dbt_project.financial_metrics"
+[0m21:50:48.387678 [debug] [Thread-6 (]: Began executing node model.financial_dbt_project.financial_metrics
+[0m21:50:48.419951 [debug] [Thread-6 (]: Writing runtime sql for node "model.financial_dbt_project.financial_metrics"
+[0m21:50:48.439422 [debug] [Thread-6 (]: Using snowflake connection "model.financial_dbt_project.financial_metrics"
+[0m21:50:48.439422 [debug] [Thread-6 (]: On model.financial_dbt_project.financial_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.financial_metrics"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics
+         as
+        (
+
+WITH balance_sheet AS (
+    SELECT *
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+),
+
+metrics AS (
+    SELECT 
+        adsh,
+        tag,
+        value,
+        stmt,
+        plabel,
+        SUM(value) OVER (PARTITION BY adsh) as total_value
+    FROM balance_sheet
+)
+
+SELECT 
+    adsh,
+    tag,
+    value,
+    stmt,
+    plabel,
+    total_value,
+    (value / NULLIF(total_value, 0)) * 100 as percentage_of_total
+FROM metrics
+        );
+[0m21:50:48.455121 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m21:50:51.001725 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 2.546 seconds
+[0m21:50:51.005738 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9fd0c857-dc94-4ec7-8be6-51628398061a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C3B94B560>]}
+[0m21:50:51.005738 [info ] [Thread-6 (]: 4 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [[32mSUCCESS 1[0m in 2.70s]
+[0m21:50:51.015543 [debug] [Thread-6 (]: Finished running node model.financial_dbt_project.financial_metrics
+[0m21:50:51.023023 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:50:51.023023 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1' was left open.
+[0m21:50:51.025762 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1: Close
+[0m21:50:51.112999 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING' was left open.
+[0m21:50:51.117236 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: Close
+[0m21:50:51.198735 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_num' was left open.
+[0m21:50:51.198735 [debug] [MainThread]: On model.financial_dbt_project.stg_num: Close
+[0m21:50:51.284048 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_pre' was left open.
+[0m21:50:51.284048 [debug] [MainThread]: On model.financial_dbt_project.stg_pre: Close
+[0m21:50:51.371438 [debug] [MainThread]: Connection 'model.financial_dbt_project.fact_balance_sheet' was left open.
+[0m21:50:51.371438 [debug] [MainThread]: On model.financial_dbt_project.fact_balance_sheet: Close
+[0m21:50:51.450124 [debug] [MainThread]: Connection 'model.financial_dbt_project.financial_metrics' was left open.
+[0m21:50:51.450124 [debug] [MainThread]: On model.financial_dbt_project.financial_metrics: Close
+[0m21:50:51.530919 [info ] [MainThread]: 
+[0m21:50:51.530919 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 10.85 seconds (10.85s).
+[0m21:50:51.537981 [debug] [MainThread]: Command end result
+[0m21:50:51.596958 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m21:50:51.599826 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m21:50:51.619329 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\run_results.json
+[0m21:50:51.619329 [info ] [MainThread]: 
+[0m21:50:51.619329 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:50:51.619329 [info ] [MainThread]: 
+[0m21:50:51.619329 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m21:50:51.629576 [debug] [MainThread]: Command `dbt run` succeeded at 21:50:51.629576 after 20.36 seconds
+[0m21:50:51.629576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C2920B950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C28C1C0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C39A75C70>]}
+[0m21:50:51.634113 [debug] [MainThread]: Flushing usage events
+[0m21:50:52.549025 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:21:10.837154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258D4BAD130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258D4BAC1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258D4BACF50>]}
+
+
+============================== 22:21:10.859982 | 7c464937-2176-49ea-8c79-2338f77e463b ==============================
+[0m22:21:10.859982 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:21:10.864070 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dhrumil Patel\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Dhrumil Patel\\Downloads\\Sec-Financial-Data-Pipeline (2)\\Sec-Financial-Data-Pipeline\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:21:18.330518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E48804A0>]}
+[0m22:21:18.742383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E31CF260>]}
+[0m22:21:18.750081 [info ] [MainThread]: Registered adapter: snowflake=1.9.1
+[0m22:21:20.162477 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m22:21:20.852679 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:21:20.854490 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:21:21.027541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E6662300>]}
+[0m22:21:21.302822 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m22:21:21.316479 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m22:21:21.412368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E6A2B530>]}
+[0m22:21:21.415716 [info ] [MainThread]: Found 4 models, 4 data tests, 7 sources, 472 macros
+[0m22:21:21.416235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E664A030>]}
+[0m22:21:21.422814 [info ] [MainThread]: 
+[0m22:21:21.428968 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m22:21:21.431338 [info ] [MainThread]: 
+[0m22:21:21.433122 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m22:21:21.451631 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1'
+[0m22:21:21.839920 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1"
+[0m22:21:21.842950 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1"} */
+show terse schemas in database ASSIGNMENT2_TEAM1
+    limit 10000
+[0m22:21:21.845782 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:21:23.252354 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.407 seconds
+[0m22:21:23.261271 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING'
+[0m22:21:23.304128 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"
+[0m22:21:23.305146 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"} */
+show objects in ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING limit 10000;
+[0m22:21:23.306699 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:21:24.165050 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.863 seconds
+[0m22:21:24.181333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E6A4BE00>]}
+[0m22:21:24.198486 [debug] [Thread-1 (]: Began running node model.financial_dbt_project.stg_num
+[0m22:21:24.199001 [debug] [Thread-2 (]: Began running node model.financial_dbt_project.stg_pre
+[0m22:21:24.199001 [info ] [Thread-1 (]: 1 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [RUN]
+[0m22:21:24.199001 [info ] [Thread-2 (]: 2 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [RUN]
+[0m22:21:24.207440 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_num'
+[0m22:21:24.211003 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_pre'
+[0m22:21:24.212743 [debug] [Thread-1 (]: Began compiling node model.financial_dbt_project.stg_num
+[0m22:21:24.215296 [debug] [Thread-2 (]: Began compiling node model.financial_dbt_project.stg_pre
+[0m22:21:24.257292 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_dbt_project.stg_num"
+[0m22:21:24.273184 [debug] [Thread-2 (]: Writing injected SQL for node "model.financial_dbt_project.stg_pre"
+[0m22:21:24.277228 [debug] [Thread-1 (]: Began executing node model.financial_dbt_project.stg_num
+[0m22:21:24.332150 [debug] [Thread-2 (]: Began executing node model.financial_dbt_project.stg_pre
+[0m22:21:24.445276 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_dbt_project.stg_num"
+[0m22:21:24.453320 [debug] [Thread-2 (]: Writing runtime sql for node "model.financial_dbt_project.stg_pre"
+[0m22:21:24.459586 [debug] [Thread-1 (]: Using snowflake connection "model.financial_dbt_project.stg_num"
+[0m22:21:24.462619 [debug] [Thread-1 (]: On model.financial_dbt_project.stg_num: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_num"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num
+  
+   as (
+    
+
+SELECT
+    adsh,
+    tag,
+    version,
+    ddate,
+    qtrs,
+    uom,
+    segments,
+    coreg,
+    COALESCE(value, -1) AS value,
+    COALESCE(footnote, 'nan') AS footnote
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.NUM
+  );
+[0m22:21:24.466518 [debug] [Thread-2 (]: Using snowflake connection "model.financial_dbt_project.stg_pre"
+[0m22:21:24.469599 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:21:24.471685 [debug] [Thread-2 (]: On model.financial_dbt_project.stg_pre: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_pre"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre
+  
+   as (
+    
+
+SELECT 
+    adsh,
+    report,
+    line,
+    stmt,
+    tag,
+    version,
+    plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.PRE
+  );
+[0m22:21:24.473730 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:21:25.149984 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.680 seconds
+[0m22:21:25.272801 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258D1E092E0>]}
+[0m22:21:25.276471 [info ] [Thread-1 (]: 1 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [[32mSUCCESS 1[0m in 1.05s]
+[0m22:21:25.281001 [debug] [Thread-1 (]: Finished running node model.financial_dbt_project.stg_num
+[0m22:21:25.499481 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.025 seconds
+[0m22:21:25.508559 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E6DC2810>]}
+[0m22:21:25.511594 [info ] [Thread-2 (]: 2 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [[32mSUCCESS 1[0m in 1.30s]
+[0m22:21:25.516874 [debug] [Thread-2 (]: Finished running node model.financial_dbt_project.stg_pre
+[0m22:21:25.519481 [debug] [Thread-4 (]: Began running node model.financial_dbt_project.fact_balance_sheet
+[0m22:21:25.519481 [info ] [Thread-4 (]: 3 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [RUN]
+[0m22:21:25.525542 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.financial_dbt_project.fact_balance_sheet'
+[0m22:21:25.529066 [debug] [Thread-4 (]: Began compiling node model.financial_dbt_project.fact_balance_sheet
+[0m22:21:25.543622 [debug] [Thread-4 (]: Writing injected SQL for node "model.financial_dbt_project.fact_balance_sheet"
+[0m22:21:25.544812 [debug] [Thread-4 (]: Began executing node model.financial_dbt_project.fact_balance_sheet
+[0m22:21:25.650780 [debug] [Thread-4 (]: Writing runtime sql for node "model.financial_dbt_project.fact_balance_sheet"
+[0m22:21:25.653918 [debug] [Thread-4 (]: Using snowflake connection "model.financial_dbt_project.fact_balance_sheet"
+[0m22:21:25.659439 [debug] [Thread-4 (]: On model.financial_dbt_project.fact_balance_sheet: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.fact_balance_sheet"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+         as
+        (
+
+SELECT
+    n.adsh,
+    n.tag,
+    n.value,
+    p.stmt,
+    p.plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num n
+JOIN ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre p
+ON n.adsh = p.adsh AND n.tag = p.tag
+WHERE p.stmt = 'BS'
+        );
+[0m22:21:25.660975 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:21:29.395059 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 3.734 seconds
+[0m22:21:29.399272 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E73086B0>]}
+[0m22:21:29.404659 [info ] [Thread-4 (]: 3 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [[32mSUCCESS 1[0m in 3.87s]
+[0m22:21:29.407191 [debug] [Thread-4 (]: Finished running node model.financial_dbt_project.fact_balance_sheet
+[0m22:21:29.409033 [debug] [Thread-6 (]: Began running node model.financial_dbt_project.financial_metrics
+[0m22:21:29.411047 [info ] [Thread-6 (]: 4 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [RUN]
+[0m22:21:29.414579 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.financial_dbt_project.financial_metrics'
+[0m22:21:29.418114 [debug] [Thread-6 (]: Began compiling node model.financial_dbt_project.financial_metrics
+[0m22:21:29.429502 [debug] [Thread-6 (]: Writing injected SQL for node "model.financial_dbt_project.financial_metrics"
+[0m22:21:29.437202 [debug] [Thread-6 (]: Began executing node model.financial_dbt_project.financial_metrics
+[0m22:21:29.446401 [debug] [Thread-6 (]: Writing runtime sql for node "model.financial_dbt_project.financial_metrics"
+[0m22:21:29.454997 [debug] [Thread-6 (]: Using snowflake connection "model.financial_dbt_project.financial_metrics"
+[0m22:21:29.459238 [debug] [Thread-6 (]: On model.financial_dbt_project.financial_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.financial_metrics"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics
+         as
+        (
+
+WITH balance_sheet AS (
+    SELECT *
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+),
+
+metrics AS (
+    SELECT 
+        adsh,
+        tag,
+        value,
+        stmt,
+        plabel,
+        SUM(value) OVER (PARTITION BY adsh) as total_value
+    FROM balance_sheet
+)
+
+SELECT 
+    adsh,
+    tag,
+    value,
+    stmt,
+    plabel,
+    total_value,
+    (value / NULLIF(total_value, 0)) * 100 as percentage_of_total
+FROM metrics
+        );
+[0m22:21:29.460728 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m22:21:31.951888 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 2.490 seconds
+[0m22:21:31.961216 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c464937-2176-49ea-8c79-2338f77e463b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E729F470>]}
+[0m22:21:31.962825 [info ] [Thread-6 (]: 4 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [[32mSUCCESS 1[0m in 2.55s]
+[0m22:21:31.968408 [debug] [Thread-6 (]: Finished running node model.financial_dbt_project.financial_metrics
+[0m22:21:31.976901 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:21:31.978598 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1' was left open.
+[0m22:21:31.981807 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1: Close
+[0m22:21:32.070746 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING' was left open.
+[0m22:21:32.070746 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: Close
+[0m22:21:32.176085 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_num' was left open.
+[0m22:21:32.183077 [debug] [MainThread]: On model.financial_dbt_project.stg_num: Close
+[0m22:21:32.272332 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_pre' was left open.
+[0m22:21:32.272332 [debug] [MainThread]: On model.financial_dbt_project.stg_pre: Close
+[0m22:21:32.369515 [debug] [MainThread]: Connection 'model.financial_dbt_project.fact_balance_sheet' was left open.
+[0m22:21:32.374050 [debug] [MainThread]: On model.financial_dbt_project.fact_balance_sheet: Close
+[0m22:21:32.471781 [debug] [MainThread]: Connection 'model.financial_dbt_project.financial_metrics' was left open.
+[0m22:21:32.473808 [debug] [MainThread]: On model.financial_dbt_project.financial_metrics: Close
+[0m22:21:32.579688 [info ] [MainThread]: 
+[0m22:21:32.579688 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 11.15 seconds (11.15s).
+[0m22:21:32.589859 [debug] [MainThread]: Command end result
+[0m22:21:32.862389 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m22:21:32.875575 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m22:21:32.893913 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\run_results.json
+[0m22:21:32.895482 [info ] [MainThread]: 
+[0m22:21:32.903371 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:21:32.905758 [info ] [MainThread]: 
+[0m22:21:32.907855 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m22:21:32.911587 [debug] [MainThread]: Command `dbt run` succeeded at 22:21:32.911587 after 22.87 seconds
+[0m22:21:32.914714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258D471C740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258D18F7560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E69FC350>]}
+[0m22:21:32.919621 [debug] [MainThread]: Flushing usage events
+[0m22:21:34.070853 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:23:03.903854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC5E56E390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC5E5121E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC607DDC10>]}
+
+
+============================== 22:23:03.927363 | edcbe2ca-61a4-44cb-8db3-040081d3842f ==============================
+[0m22:23:03.927363 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:23:03.936148 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Dhrumil Patel\\Downloads\\Sec-Financial-Data-Pipeline (2)\\Sec-Financial-Data-Pipeline\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Dhrumil Patel\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:23:09.857945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC607819D0>]}
+[0m22:23:10.206185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC60D8B560>]}
+[0m22:23:10.210251 [info ] [MainThread]: Registered adapter: snowflake=1.9.1
+[0m22:23:11.628018 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m22:23:12.426731 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:23:12.429697 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:23:12.610723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC72EF1E80>]}
+[0m22:23:12.869635 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m22:23:12.876029 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m22:23:12.979341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC733270E0>]}
+[0m22:23:12.980518 [info ] [MainThread]: Found 4 models, 4 data tests, 7 sources, 472 macros
+[0m22:23:12.986324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC61044740>]}
+[0m22:23:12.998893 [info ] [MainThread]: 
+[0m22:23:12.998893 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m22:23:13.020447 [info ] [MainThread]: 
+[0m22:23:13.031955 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m22:23:13.075183 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1'
+[0m22:23:13.364877 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1"
+[0m22:23:13.364877 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1"} */
+show terse schemas in database ASSIGNMENT2_TEAM1
+    limit 10000
+[0m22:23:13.364877 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:23:14.584798 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.221 seconds
+[0m22:23:14.592371 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING'
+[0m22:23:14.629598 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"
+[0m22:23:14.631791 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"} */
+show objects in ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING limit 10000;
+[0m22:23:14.635072 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:23:15.183215 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.548 seconds
+[0m22:23:15.213854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC5E793050>]}
+[0m22:23:15.228844 [debug] [Thread-1 (]: Began running node model.financial_dbt_project.stg_num
+[0m22:23:15.230204 [debug] [Thread-2 (]: Began running node model.financial_dbt_project.stg_pre
+[0m22:23:15.231578 [info ] [Thread-1 (]: 1 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [RUN]
+[0m22:23:15.233861 [info ] [Thread-2 (]: 2 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [RUN]
+[0m22:23:15.237176 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_num'
+[0m22:23:15.238703 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_pre'
+[0m22:23:15.238703 [debug] [Thread-1 (]: Began compiling node model.financial_dbt_project.stg_num
+[0m22:23:15.238703 [debug] [Thread-2 (]: Began compiling node model.financial_dbt_project.stg_pre
+[0m22:23:15.277435 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_dbt_project.stg_num"
+[0m22:23:15.290003 [debug] [Thread-2 (]: Writing injected SQL for node "model.financial_dbt_project.stg_pre"
+[0m22:23:15.294493 [debug] [Thread-1 (]: Began executing node model.financial_dbt_project.stg_num
+[0m22:23:15.297316 [debug] [Thread-2 (]: Began executing node model.financial_dbt_project.stg_pre
+[0m22:23:15.434243 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_dbt_project.stg_num"
+[0m22:23:15.440166 [debug] [Thread-2 (]: Writing runtime sql for node "model.financial_dbt_project.stg_pre"
+[0m22:23:15.440166 [debug] [Thread-1 (]: Using snowflake connection "model.financial_dbt_project.stg_num"
+[0m22:23:15.440166 [debug] [Thread-1 (]: On model.financial_dbt_project.stg_num: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_num"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num
+  
+   as (
+    
+
+SELECT
+    adsh,
+    tag,
+    version,
+    ddate,
+    qtrs,
+    uom,
+    segments,
+    coreg,
+    COALESCE(value, -1) AS value,
+    COALESCE(footnote, 'nan') AS footnote
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.NUM
+  );
+[0m22:23:15.450651 [debug] [Thread-2 (]: Using snowflake connection "model.financial_dbt_project.stg_pre"
+[0m22:23:15.450651 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:23:15.454689 [debug] [Thread-2 (]: On model.financial_dbt_project.stg_pre: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_pre"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre
+  
+   as (
+    
+
+SELECT 
+    adsh,
+    report,
+    line,
+    stmt,
+    tag,
+    version,
+    plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.PRE
+  );
+[0m22:23:15.458384 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:23:16.294666 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.837 seconds
+[0m22:23:16.375961 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.927 seconds
+[0m22:23:16.386578 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC5E709340>]}
+[0m22:23:16.386578 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC70D3B020>]}
+[0m22:23:16.390800 [info ] [Thread-2 (]: 2 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [[32mSUCCESS 1[0m in 1.13s]
+[0m22:23:16.393337 [debug] [Thread-2 (]: Finished running node model.financial_dbt_project.stg_pre
+[0m22:23:16.393337 [info ] [Thread-1 (]: 1 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [[32mSUCCESS 1[0m in 1.15s]
+[0m22:23:16.397252 [debug] [Thread-1 (]: Finished running node model.financial_dbt_project.stg_num
+[0m22:23:16.400072 [debug] [Thread-4 (]: Began running node model.financial_dbt_project.fact_balance_sheet
+[0m22:23:16.403522 [info ] [Thread-4 (]: 3 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [RUN]
+[0m22:23:16.408128 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.financial_dbt_project.fact_balance_sheet'
+[0m22:23:16.409993 [debug] [Thread-4 (]: Began compiling node model.financial_dbt_project.fact_balance_sheet
+[0m22:23:16.417801 [debug] [Thread-4 (]: Writing injected SQL for node "model.financial_dbt_project.fact_balance_sheet"
+[0m22:23:16.422731 [debug] [Thread-4 (]: Began executing node model.financial_dbt_project.fact_balance_sheet
+[0m22:23:16.521234 [debug] [Thread-4 (]: Writing runtime sql for node "model.financial_dbt_project.fact_balance_sheet"
+[0m22:23:16.525302 [debug] [Thread-4 (]: Using snowflake connection "model.financial_dbt_project.fact_balance_sheet"
+[0m22:23:16.529856 [debug] [Thread-4 (]: On model.financial_dbt_project.fact_balance_sheet: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.fact_balance_sheet"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+         as
+        (
+
+SELECT
+    n.adsh,
+    n.tag,
+    n.value,
+    p.stmt,
+    p.plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num n
+JOIN ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre p
+ON n.adsh = p.adsh AND n.tag = p.tag
+WHERE p.stmt = 'BS'
+        );
+[0m22:23:16.529856 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:23:20.194096 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 3.662 seconds
+[0m22:23:20.200684 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC73BFE030>]}
+[0m22:23:20.201848 [info ] [Thread-4 (]: 3 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [[32mSUCCESS 1[0m in 3.79s]
+[0m22:23:20.207628 [debug] [Thread-4 (]: Finished running node model.financial_dbt_project.fact_balance_sheet
+[0m22:23:20.209367 [debug] [Thread-6 (]: Began running node model.financial_dbt_project.financial_metrics
+[0m22:23:20.211575 [info ] [Thread-6 (]: 4 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [RUN]
+[0m22:23:20.214258 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.financial_dbt_project.financial_metrics'
+[0m22:23:20.215532 [debug] [Thread-6 (]: Began compiling node model.financial_dbt_project.financial_metrics
+[0m22:23:20.230110 [debug] [Thread-6 (]: Writing injected SQL for node "model.financial_dbt_project.financial_metrics"
+[0m22:23:20.233083 [debug] [Thread-6 (]: Began executing node model.financial_dbt_project.financial_metrics
+[0m22:23:20.243506 [debug] [Thread-6 (]: Writing runtime sql for node "model.financial_dbt_project.financial_metrics"
+[0m22:23:20.246036 [debug] [Thread-6 (]: Using snowflake connection "model.financial_dbt_project.financial_metrics"
+[0m22:23:20.249610 [debug] [Thread-6 (]: On model.financial_dbt_project.financial_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.financial_metrics"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics
+         as
+        (
+
+WITH balance_sheet AS (
+    SELECT *
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+),
+
+metrics AS (
+    SELECT 
+        adsh,
+        tag,
+        value,
+        stmt,
+        plabel,
+        SUM(value) OVER (PARTITION BY adsh) as total_value
+    FROM balance_sheet
+)
+
+SELECT 
+    adsh,
+    tag,
+    value,
+    stmt,
+    plabel,
+    total_value,
+    (value / NULLIF(total_value, 0)) * 100 as percentage_of_total
+FROM metrics
+        );
+[0m22:23:20.250734 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m22:23:23.054766 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 2.804 seconds
+[0m22:23:23.060895 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'edcbe2ca-61a4-44cb-8db3-040081d3842f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC73BFEE70>]}
+[0m22:23:23.063121 [info ] [Thread-6 (]: 4 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [[32mSUCCESS 1[0m in 2.85s]
+[0m22:23:23.065681 [debug] [Thread-6 (]: Finished running node model.financial_dbt_project.financial_metrics
+[0m22:23:23.071848 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:23:23.072988 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1' was left open.
+[0m22:23:23.074407 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1: Close
+[0m22:23:23.165100 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING' was left open.
+[0m22:23:23.172570 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: Close
+[0m22:23:23.268240 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_num' was left open.
+[0m22:23:23.268240 [debug] [MainThread]: On model.financial_dbt_project.stg_num: Close
+[0m22:23:23.360147 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_pre' was left open.
+[0m22:23:23.365249 [debug] [MainThread]: On model.financial_dbt_project.stg_pre: Close
+[0m22:23:23.472598 [debug] [MainThread]: Connection 'model.financial_dbt_project.fact_balance_sheet' was left open.
+[0m22:23:23.475236 [debug] [MainThread]: On model.financial_dbt_project.fact_balance_sheet: Close
+[0m22:23:23.590198 [debug] [MainThread]: Connection 'model.financial_dbt_project.financial_metrics' was left open.
+[0m22:23:23.590198 [debug] [MainThread]: On model.financial_dbt_project.financial_metrics: Close
+[0m22:23:23.676860 [info ] [MainThread]: 
+[0m22:23:23.681059 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 10.65 seconds (10.65s).
+[0m22:23:23.681059 [debug] [MainThread]: Command end result
+[0m22:23:23.828288 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m22:23:23.832838 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m22:23:23.848408 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\run_results.json
+[0m22:23:23.855469 [info ] [MainThread]: 
+[0m22:23:23.855469 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:23:23.855469 [info ] [MainThread]: 
+[0m22:23:23.855469 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m22:23:23.855469 [debug] [MainThread]: Command `dbt run` succeeded at 22:23:23.855469 after 20.83 seconds
+[0m22:23:23.855469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC5E56E390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC6135F9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC60C09820>]}
+[0m22:23:23.855469 [debug] [MainThread]: Flushing usage events
+[0m22:23:24.995455 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:12:55.923822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295F7830DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295F74040B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295F74077D0>]}
+
+
+============================== 03:12:55.929056 | 3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9 ==============================
+[0m03:12:55.929056 [info ] [MainThread]: Running with dbt=1.9.2
+[0m03:12:55.933562 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Dhrumil Patel\\Downloads\\Sec-Financial-Data-Pipeline (2)\\Sec-Financial-Data-Pipeline\\logs', 'profiles_dir': 'C:\\Users\\Dhrumil Patel\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:13:12.898502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958B2B1BE0>]}
+[0m03:13:13.056252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295F9D7F440>]}
+[0m03:13:13.070621 [info ] [MainThread]: Registered adapter: snowflake=1.9.1
+[0m03:13:14.110204 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m03:13:16.843823 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:13:16.845342 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:13:17.048033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958C3AA600>]}
+[0m03:13:17.300958 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m03:13:17.307249 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m03:13:17.396204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958C5DFA70>]}
+[0m03:13:17.403682 [info ] [MainThread]: Found 4 models, 4 data tests, 7 sources, 472 macros
+[0m03:13:17.404191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958C3805F0>]}
+[0m03:13:17.406248 [info ] [MainThread]: 
+[0m03:13:17.412260 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m03:13:17.415707 [info ] [MainThread]: 
+[0m03:13:17.417354 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:13:17.438701 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1'
+[0m03:13:22.508921 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1"
+[0m03:13:22.508921 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1"} */
+show terse schemas in database ASSIGNMENT2_TEAM1
+    limit 10000
+[0m03:13:22.513435 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:13:25.063765 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 2.551 seconds
+[0m03:13:25.070792 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING'
+[0m03:13:25.089734 [debug] [ThreadPool]: Using snowflake connection "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"
+[0m03:13:25.093416 [debug] [ThreadPool]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "connection_name": "list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING"} */
+show objects in ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING limit 10000;
+[0m03:13:25.093416 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:13:25.772226 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.680 seconds
+[0m03:13:25.777133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958C322030>]}
+[0m03:13:25.788441 [debug] [Thread-1 (]: Began running node model.financial_dbt_project.stg_num
+[0m03:13:25.788441 [debug] [Thread-2 (]: Began running node model.financial_dbt_project.stg_pre
+[0m03:13:25.788441 [info ] [Thread-1 (]: 1 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [RUN]
+[0m03:13:25.788441 [info ] [Thread-2 (]: 2 of 4 START sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [RUN]
+[0m03:13:25.788441 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_num'
+[0m03:13:25.788441 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.financial_dbt_project.stg_pre'
+[0m03:13:25.788441 [debug] [Thread-1 (]: Began compiling node model.financial_dbt_project.stg_num
+[0m03:13:25.788441 [debug] [Thread-2 (]: Began compiling node model.financial_dbt_project.stg_pre
+[0m03:13:25.829900 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_dbt_project.stg_num"
+[0m03:13:25.838077 [debug] [Thread-2 (]: Writing injected SQL for node "model.financial_dbt_project.stg_pre"
+[0m03:13:25.839227 [debug] [Thread-1 (]: Began executing node model.financial_dbt_project.stg_num
+[0m03:13:25.847770 [debug] [Thread-2 (]: Began executing node model.financial_dbt_project.stg_pre
+[0m03:13:25.922747 [debug] [Thread-2 (]: Writing runtime sql for node "model.financial_dbt_project.stg_pre"
+[0m03:13:25.936223 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_dbt_project.stg_num"
+[0m03:13:25.938143 [debug] [Thread-2 (]: Using snowflake connection "model.financial_dbt_project.stg_pre"
+[0m03:13:25.941659 [debug] [Thread-2 (]: On model.financial_dbt_project.stg_pre: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_pre"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre
+  
+   as (
+    
+
+SELECT 
+    adsh,
+    report,
+    line,
+    stmt,
+    tag,
+    version,
+    plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.PRE
+  );
+[0m03:13:25.943188 [debug] [Thread-1 (]: Using snowflake connection "model.financial_dbt_project.stg_num"
+[0m03:13:25.945464 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:13:25.945982 [debug] [Thread-1 (]: On model.financial_dbt_project.stg_num: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.stg_num"} */
+create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num
+  
+   as (
+    
+
+SELECT
+    adsh,
+    tag,
+    version,
+    ddate,
+    qtrs,
+    uom,
+    segments,
+    coreg,
+    COALESCE(value, -1) AS value,
+    COALESCE(footnote, 'nan') AS footnote
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING.NUM
+  );
+[0m03:13:25.945982 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m03:13:26.593832 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.646 seconds
+[0m03:13:26.655956 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295F7A292E0>]}
+[0m03:13:26.657509 [info ] [Thread-1 (]: 1 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num  [[32mSUCCESS 1[0m in 0.86s]
+[0m03:13:26.661262 [debug] [Thread-1 (]: Finished running node model.financial_dbt_project.stg_num
+[0m03:13:26.690310 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.744 seconds
+[0m03:13:26.700306 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958D035D30>]}
+[0m03:13:26.702830 [info ] [Thread-2 (]: 2 of 4 OK created sql view model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre  [[32mSUCCESS 1[0m in 0.91s]
+[0m03:13:26.708529 [debug] [Thread-2 (]: Finished running node model.financial_dbt_project.stg_pre
+[0m03:13:26.712694 [debug] [Thread-4 (]: Began running node model.financial_dbt_project.fact_balance_sheet
+[0m03:13:26.713707 [info ] [Thread-4 (]: 3 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [RUN]
+[0m03:13:26.717406 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.financial_dbt_project.fact_balance_sheet'
+[0m03:13:26.720148 [debug] [Thread-4 (]: Began compiling node model.financial_dbt_project.fact_balance_sheet
+[0m03:13:26.738599 [debug] [Thread-4 (]: Writing injected SQL for node "model.financial_dbt_project.fact_balance_sheet"
+[0m03:13:26.744920 [debug] [Thread-4 (]: Began executing node model.financial_dbt_project.fact_balance_sheet
+[0m03:13:26.866255 [debug] [Thread-4 (]: Writing runtime sql for node "model.financial_dbt_project.fact_balance_sheet"
+[0m03:13:26.873733 [debug] [Thread-4 (]: Using snowflake connection "model.financial_dbt_project.fact_balance_sheet"
+[0m03:13:26.875930 [debug] [Thread-4 (]: On model.financial_dbt_project.fact_balance_sheet: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.fact_balance_sheet"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+         as
+        (
+
+SELECT
+    n.adsh,
+    n.tag,
+    n.value,
+    p.stmt,
+    p.plabel
+FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num n
+JOIN ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_pre p
+ON n.adsh = p.adsh AND n.tag = p.tag
+WHERE p.stmt = 'BS'
+        );
+[0m03:13:26.878885 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m03:13:31.305164 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 4.426 seconds
+[0m03:13:31.306211 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958D1AEC00>]}
+[0m03:13:31.306211 [info ] [Thread-4 (]: 3 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet  [[32mSUCCESS 1[0m in 4.59s]
+[0m03:13:31.312492 [debug] [Thread-4 (]: Finished running node model.financial_dbt_project.fact_balance_sheet
+[0m03:13:31.314945 [debug] [Thread-6 (]: Began running node model.financial_dbt_project.financial_metrics
+[0m03:13:31.315452 [info ] [Thread-6 (]: 4 of 4 START sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [RUN]
+[0m03:13:31.317593 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.financial_dbt_project.financial_metrics'
+[0m03:13:31.318927 [debug] [Thread-6 (]: Began compiling node model.financial_dbt_project.financial_metrics
+[0m03:13:31.325387 [debug] [Thread-6 (]: Writing injected SQL for node "model.financial_dbt_project.financial_metrics"
+[0m03:13:31.325387 [debug] [Thread-6 (]: Began executing node model.financial_dbt_project.financial_metrics
+[0m03:13:31.337399 [debug] [Thread-6 (]: Writing runtime sql for node "model.financial_dbt_project.financial_metrics"
+[0m03:13:31.342367 [debug] [Thread-6 (]: Using snowflake connection "model.financial_dbt_project.financial_metrics"
+[0m03:13:31.342367 [debug] [Thread-6 (]: On model.financial_dbt_project.financial_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "financial_dbt_project", "target_name": "dev", "node_id": "model.financial_dbt_project.financial_metrics"} */
+create or replace transient table ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics
+         as
+        (
+
+WITH balance_sheet AS (
+    SELECT *
+    FROM ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.fact_balance_sheet
+),
+
+metrics AS (
+    SELECT 
+        adsh,
+        tag,
+        value,
+        stmt,
+        plabel,
+        SUM(value) OVER (PARTITION BY adsh) as total_value
+    FROM balance_sheet
+)
+
+SELECT 
+    adsh,
+    tag,
+    value,
+    stmt,
+    plabel,
+    total_value,
+    (value / NULLIF(total_value, 0)) * 100 as percentage_of_total
+FROM metrics
+        );
+[0m03:13:31.344612 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m03:13:34.581088 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 3.236 seconds
+[0m03:13:34.585478 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a1f7705-e0c0-4b16-8a15-cf3e9ef54bf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958D085E20>]}
+[0m03:13:34.589982 [info ] [Thread-6 (]: 4 of 4 OK created sql table model FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.financial_metrics  [[32mSUCCESS 1[0m in 3.27s]
+[0m03:13:34.592667 [debug] [Thread-6 (]: Finished running node model.financial_dbt_project.financial_metrics
+[0m03:13:34.595936 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:13:34.597026 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1' was left open.
+[0m03:13:34.598212 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1: Close
+[0m03:13:34.678267 [debug] [MainThread]: Connection 'list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING' was left open.
+[0m03:13:34.678267 [debug] [MainThread]: On list_ASSIGNMENT2_TEAM1_FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING: Close
+[0m03:13:34.770774 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_num' was left open.
+[0m03:13:34.770774 [debug] [MainThread]: On model.financial_dbt_project.stg_num: Close
+[0m03:13:34.876371 [debug] [MainThread]: Connection 'model.financial_dbt_project.stg_pre' was left open.
+[0m03:13:34.876371 [debug] [MainThread]: On model.financial_dbt_project.stg_pre: Close
+[0m03:13:35.097787 [debug] [MainThread]: Connection 'model.financial_dbt_project.fact_balance_sheet' was left open.
+[0m03:13:35.097787 [debug] [MainThread]: On model.financial_dbt_project.fact_balance_sheet: Close
+[0m03:13:35.189191 [debug] [MainThread]: Connection 'model.financial_dbt_project.financial_metrics' was left open.
+[0m03:13:35.196080 [debug] [MainThread]: On model.financial_dbt_project.financial_metrics: Close
+[0m03:13:35.285576 [info ] [MainThread]: 
+[0m03:13:35.288123 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 17.87 seconds (17.87s).
+[0m03:13:35.290611 [debug] [MainThread]: Command end result
+[0m03:13:35.370797 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\manifest.json
+[0m03:13:35.377036 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\semantic_manifest.json
+[0m03:13:35.394563 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Dhrumil Patel\Downloads\Sec-Financial-Data-Pipeline (2)\Sec-Financial-Data-Pipeline\target\run_results.json
+[0m03:13:35.394563 [info ] [MainThread]: 
+[0m03:13:35.398501 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:13:35.401106 [info ] [MainThread]: 
+[0m03:13:35.403057 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m03:13:35.405650 [debug] [MainThread]: Command `dbt run` succeeded at 03:13:35.405650 after 39.67 seconds
+[0m03:13:35.409917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295FA427B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295FA7BC710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002958A14DFA0>]}
+[0m03:13:35.412700 [debug] [MainThread]: Flushing usage events
+[0m03:13:36.306784 [debug] [MainThread]: An error was encountered while trying to flush usage events

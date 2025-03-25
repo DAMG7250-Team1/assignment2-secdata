@@ -1,5 +1,5 @@
 
-  create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_FACT_TABLE_STAGING.stg_num
+  create or replace   view ASSIGNMENT2_TEAM1.FACT_TABLE_STAGING_DENORMALIZE_FACT_STAGING.stg_num
   
    as (
     
